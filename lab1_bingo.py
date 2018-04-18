@@ -18,43 +18,58 @@ def main():
         reader = csv.reader(f, delimiter=',')
 	T = [map(str.strip, row)[1:] for row in reader]
 
-    with open("goods.csv", 'r') as f:
-        reader = csv.reader(f, delimiter=',')
-        goods = [getName(row[1:3]) for row in reader]
-    del goods[0]
+    with open("authorlist.psv", 'r') as f:
+        reader = csv.reader(f, delimiter='|')
+        goods = [row[1].strip() for row in reader]
 
     # init itemset
     I = [str(i) for i in range(0, len(goods))]
 
     F =  apriori(T, I, minsup)
+    sky = getSkylineItems(F)
+    '''
     print "Frequent Item Sets: " + str(len(F))
     [printFreqItem(i, goods) for i in F]
     print
+    '''
 
-    print "Frequent Item Sets: " + str(len(getSkylineItems(F)))
-    [printFreqItem(i, goods) for i in getSkylineItems(F)]
+    print "Frequent Item Sets: " + str(len(sky))
+    [printFreqItem(i, goods, T) for i in getSkylineItems(sky)]
     print
 
+    '''
     R = genRules(F, minconf, T)
-    print "Association Rules: " + str(len(R))
-    [printRule(r, goods, T) for r in R]
+    sky = getSkylineRules(R)
+    print "Association Rules: " + str(len(sky))
+    [printRule(r, goods, T) for r in sky]
+    '''
 
+def getSkylineRules(R):
+    r = R[:]
+    for i in range(len(R) - 1):
+        for j in range(i + 1, len(R)):
+            f1 = R[i]
+            f2 = R[j]
+            
+            if f1 != None and f2 != None:
+                if set(f1[0]).issubset(set(f2[0])) and f1[1] == f2[1]:
+                    r[i] = None
+                    break
+
+    return [x for x in r if x != None]
 
 def getSkylineItems(F):
     r = F[:]
-    for i in range(len(F)):
+    for i in range(len(F) - 1):
         for j in range(i + 1, len(F)):
-	   f1 = F[i]
-           f2 = F[j]
-
-           if f1 != f2 and f1 != None and f2 != None:
-               if set(f1).issubset(set(f2)):
-                   r[i] = None
-     	           break
-               elif set(f2).issubset(set(f1)):
-                   r[j] = None
-                   break
-
+            f1 = F[i]
+            f2 = F[j]
+        
+            if f1 != None and f2 != None:
+                if set(f1).issubset(set(f2)):
+                    r[i] = None
+                    break
+    
     return [x for x in r if x != None]
 
 
@@ -62,13 +77,13 @@ def getName(flavorFood):
     #return flavorFood[1].strip('\'') + ' ' + flavorFood[0].strip('\'')
     return flavorFood[0].strip('\'') + ' ' + flavorFood[1].strip('\'')
 
-def printFreqItem(itemSet, goods):
-    items = [goods[int(i)] for i in itemSet]
-    print ", ".join(items)
+def printFreqItem(itemSet, goods, T):
+    items = [goods[int(i)-1] for i in itemSet]
+    print ", ".join(items) + "[sup=" + str(supportT(itemSet, T)) + "]"
 
 def printRule(rule, goods, T):
-    left = [goods[int(i)] for i in rule[0]]
-    right = goods[int(list(rule[1])[0])]
+    left = [goods[int(i)-1] for i in rule[0]]
+    right = goods[int(list(rule[1])[0])-1]
     print ", ".join(left) + " ---> " + right + "[sup=" + str(support(rule[0], rule[1], T)) + ", conf=" + str(confidence(rule[0], rule[1], T)) + "]"
 
 def supportT(X, T):
