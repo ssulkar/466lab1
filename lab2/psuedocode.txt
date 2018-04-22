@@ -19,7 +19,7 @@ begin // Step 1: check termination conditions
             label(r) := Ag;
             foreach v ∈ dom(Ag) do
                 Dv := {t ∈ D|t[Ag] = v};
-                if Dv 6= ∅ then
+                if Dv != ∅ then
                     C45(Dv, A − {Ag}, Tv); //recursive call
                     append Tv to r with an edge labeled v;
                 endif
