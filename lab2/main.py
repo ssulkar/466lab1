@@ -21,6 +21,12 @@ def main():
 def alg_c45(D, A, T, theshold):
     pass
 
+def log(x):
+    val = 0
+    if x != 0:
+        val = math.log(x,2)
+    return val
+
 # utility function for displaying decision tree
 def showTree(T, level):
     if len(T.edges) == 0:
