@@ -1,10 +1,11 @@
 import random
+import math
 
 def entropy(dataSet):
-    e = 0 #when dataSet is empty the entropy is 0
+    e = float(0) #when dataSet is empty the entropy is 0
     if len(dataSet) != 0:
         classList = list(set([d[-1] for d in dataSet])) #get classes and remove duplicates
-        classCount = [0 for i in classList]
+        classCount = [float(0) for i in classList]
         for d in dataSet:
             classCount[classList.index(d[-1])] += 1 #increment the numerator
         
@@ -24,6 +25,9 @@ def log(k):
     return val
 
 def selectSplittingAttribute (A, D, threshold):
+    p = entropy(D)
+    print p
+    
     if len(A) < 3:
         return None
     else:
