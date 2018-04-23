@@ -1,7 +1,8 @@
 import unittest
+import json
+import xml.etree.ElementTree as ET
 
-import d_tree
-from d_tree import Node, Edge
+from d_tree import *
 
 # for testing only
 def buildTestTree():
@@ -21,70 +22,27 @@ def buildTestTree():
     n2.edges.append(e4)
     n2.edges.append(e5)
 
-    tree = Node('Gender')
-    tree.edges.append(Edge('Female', n))
-    tree.edges.append(Edge('Male', n2))
+    n3 = Node('Gender')
+    n3.edges.append(Edge('Female', n))
+    n3.edges.append(Edge('Male', n2))
+    tree = Tree(n3)
     return tree
 
 class TestDecisionTree(unittest.TestCase):
     def test_toJSON(self):
-        expect = {
-            "value": "Gender",
-            "edges": [
-                {
-                    "label": "Female",
-                    "node": {
-                        "value": "Bush Approval",
-                        "edges": [
-                            {
-                                "label": "Approve",
-                                "node": {
-                                    "value": "McCain",
-                                    "edges": []
-                                }
-                            },
-                            {
-                                "label": "Disapprove",
-                                "node": {
-                                    "value": "Obama",
-                                    "edges": []
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "label": "Male",
-                    "node": {
-                        "value": "Ideology",
-                        "edges": [
-                            {
-                                "label": "Liberal",
-                                "node": {
-                                    "value": "Obama",
-                                    "edges": []
-                                }
-                            },
-                            {
-                                "label": "Moderate",
-                                "node": {
-                                    "value": "Obama",
-                                    "edges": []
-                                }
-                            },
-                            {
-                                "label": "Conservative",
-                                "node": {
-                                    "value": "McCain",
-                                    "edges": []
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        }
-        self.assertEqual(d_tree.toJSON(buildTestTree()), expect)
+        with open('example_format.json', 'r') as f:
+            expect = json.load(f)
+            self.assertEqual(toJSON(buildTestTree()), expect)
+
+    def test_toXML(self):
+        with open('example_format.xml', 'r') as f:
+            tmp = ET.fromstring(toXML(buildTestTree()))
+            tree = ET.ElementTree(tmp)
+            tree.write('decision_tree.xml')
+            
+            expect = ET.parse(f)
+            # print(ET.tostring(tree.getroot()))
+            # print(ET.tostring(expect.getroot()))
 
 if __name__ == '__main__':
     unittest.main()

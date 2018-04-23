@@ -1,0 +1,27 @@
+<Tree name="test">
+    <node var="Gender">
+        <edge num="null" var="Female">
+            <node var="Bush Approval">
+                <edge num="null" var="Approve">
+                    <decision choice="McCain" end="null" p="null" />
+                </edge>
+                <edge num="null" var="Disapprove">
+                    <decision choice="Obama" end="null" p="null" />
+                </edge>
+            </node>
+        </edge>
+        <edge num="null" var="Male">
+            <node var="Ideology">
+                <edge num="null" var="Liberal">
+                    <decision choice="Obama" end="null" p="null" />
+                </edge>
+                <edge num="null" var="Moderate">
+                    <decision choice="Obama" end="null" p="null" />
+                </edge>
+                <edge num="null" var="Conservative">
+                    <decision choice="McCain" end="null" p="null" />
+                </edge>
+            </node>
+        </edge>
+    </node>
+</Tree>
