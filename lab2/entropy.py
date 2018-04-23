@@ -24,11 +24,21 @@ def log(k):
         val = math.log(k,2)
     return val
 
+#TODO
 def selectSplittingAttribute (A, D, threshold):
-    p = entropy(D)
-    print p
+    p0 = entropy(D)
+    gain = [0 for a in A]
+    for i in range(len(gain)):
+        gain[i] = p0 - entropy(A[i])
     
+    bestIndex = gain.index(max(gain))
+    
+    if gain[bestIndex] > threshold :
+        return A[bestIndex]
+    else:
+        return None    
+    '''
     if len(A) < 3:
         return None
     else:
-        return A[random.randint(1, len(A) - 1)]
+        return A[random.randint(1, len(A) - 1)]'''
