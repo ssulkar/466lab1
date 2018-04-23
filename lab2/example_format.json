@@ -1,56 +1,59 @@
 {
-    "value": "Gender",
-    "edges": [
-        {
-            "label": "Female",
-            "node": {
-                "value": "Bush Approval",
-                "edges": [
-                    {
-                        "label": "Approve",
-                        "node": {
-                            "value": "McCain",
-                            "edges": []
+    "Tree": {
+        "value": "Gender",
+        "edges": [
+            {
+                "label": "Female",
+                "node": {
+                    "value": "Bush Approval",
+                    "edges": [
+                        {
+                            "label": "Approve",
+                            "node": {
+                                "value": "McCain",
+                                "edges": []
+                            }
+                        },
+                        {
+                            "label": "Disapprove",
+                            "node": {
+                                "value": "Obama",
+                                "edges": []
+                            }
                         }
-                    },
-                    {
-                        "label": "Disapprove",
-                        "node": {
-                            "value": "Obama",
-                            "edges": []
+                    ]
+                }
+            },
+            {
+                "label": "Male",
+                "node": {
+                    "value": "Ideology",
+                    "edges": [
+                        {
+                            "label": "Liberal",
+                            "node": {
+                                "value": "Obama",
+                                "edges": []
+                            }
+                        },
+                        {
+                            "label": "Moderate",
+                            "node": {
+                                "value": "Obama",
+                                "edges": []
+                            }
+                        },
+                        {
+                            "label": "Conservative",
+                            "node": {
+                                "value": "McCain",
+                                "edges": []
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
-        },
-        {
-            "label": "Male",
-            "node": {
-                "value": "Ideology",
-                "edges": [
-                    {
-                        "label": "Liberal",
-                        "node": {
-                            "value": "Obama",
-                            "edges": []
-                        }
-                    },
-                    {
-                        "label": "Moderate",
-                        "node": {
-                            "value": "Obama",
-                            "edges": []
-                        }
-                    },
-                    {
-                        "label": "Conservative",
-                        "node": {
-                            "value": "McCain",
-                            "edges": []
-                        }
-                    }
-                ]
-            }
-        }
-    ]
+        ]
+    },
+    "name": "test"
 }

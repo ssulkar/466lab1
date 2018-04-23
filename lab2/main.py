@@ -1,19 +1,24 @@
+import sys
 import csv
 import json
+import xml.etree.ElementTree as ET
 
 import alg
 import d_tree
 
 def main():
+    # tree = ET.parse(str(sys.argv[1]))
+    # root = tree.getroot()
+
     data = []
-    with open('tree_testing/tree03-20-words.csv', 'r') as f:
+    with open(str(sys.argv[2]), 'r') as f:
         reader = csv.reader(f, delimiter=',')
         data = [row for row in reader]
     attributes = data[0]
     # attributes = attributes[1:-1]
     data = data[3:]
     T = alg.c45(data, attributes, d_tree.Node('root'), 0)
-    print(json.dumps(d_tree.toJSON(T), sort_keys=True, indent=4))
+    # print(json.dumps(d_tree.toJSON(T), sort_keys=True, indent=4))
 
 def log(x):
     val = 0
