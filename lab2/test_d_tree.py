@@ -1,6 +1,6 @@
 import unittest
 import json
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree
 
 from d_tree import *
 
@@ -36,13 +36,13 @@ class TestDecisionTree(unittest.TestCase):
 
     def test_toXML(self):
         with open('example_format.xml', 'r') as f:
-            tmp = ET.fromstring(toXML(buildTestTree()))
-            tree = ET.ElementTree(tmp)
+            tmp = ElementTree.fromstring(toXML(buildTestTree()))
+            tree = ElementTree.ElementTree(tmp)
             tree.write('decision_tree.xml')
             
-            expect = ET.parse(f)
-            # print(ET.tostring(tree.getroot()))
-            # print(ET.tostring(expect.getroot()))
+            expect = ElementTree.parse(f)
+            # print(ElementTree.tostring(tree.getroot()))
+            # print(ElementTree.tostring(expect.getroot()))
 
 if __name__ == '__main__':
     unittest.main()
