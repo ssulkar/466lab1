@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<Tree name="test">
+    <node var="Family Income">
+        <edge num="null" var="100000-149999">
+            <node var="Bush Approval">
+                <edge num="null" var="West">
+                    <node var="Political Party">
+                        <edge num="null" var="Independent">
+                            <decision choice="Obama" end="null" p="null"/>
+                        </edge>
+                        <edge num="null" var="Democratic">
+                            <decision choice="Obama" end="null" p="null"/>
+                        </edge>
+                        <edge num="null" var="Republican">
+                            <node var="Education">
+                                <edge num="null" var="Protestant">
+                                    <node var="Ideology">
+                                        <edge num="null" var="Republican">
+                                            <node var="Religion">
+                                                <edge num="null" var="White">
+                                                    <node var="Region">
+                                                        <edge num="null" var="Female">
+                                                            <node var="Gender">
+                                                                <edge num="null" var="Moderate">
+                                                                    <decision choice="Obama" end="null" p="null"/>
+                                                                </edge>
+                                                                <edge num="null" var="Liberal">
+                                                                    <node var="Race">
+                                                                        <edge num="null" var="Republican">
+                                                                            <node var="Vote">
+                                                                                <edge num="null" var="Liberal">
+                                                                                    <node var="Age">
+                                                                                        <edge num="null" var="Republican">
+                                                                                            <decision choice="McCain" end="null" p="null"/>
+                                                                                        </edge>
+                                                                                    </node>
+                                                                                </edge>
+                                                                            </node>
+                                                                        </edge>
+                                                                    </node>
+                                                                </edge>
+                                                            </node>
+                                                        </edge>
+                                                    </node>
+                                                </edge>
+                                            </node>
+                                        </edge>
+                                    </node>
+                                </edge>
+                            </node>
+                        </edge>
+                    </node>
+                </edge>
+                <edge num="null" var="Northeast">
+                    <decision choice="McCain" end="null" p="null"/>
+                </edge>
+                <edge num="null" var="Midwest">
+                    <node var="Id">
+                        <edge num="null" var="81">
+                            <decision choice="McCain" end="null" p="null"/>
+                        </edge>
+                        <edge num="null" var="42">
+                            <decision choice="Obama" end="null" p="null"/>
+                        </edge>
+                        <edge num="null" var="21">
+                            <decision choice="Obama" end="null" p="null"/>
+                        </edge>
+                        <edge num="null" var="70">
+                            <decision choice="Obama" end="null" p="null"/>
+                        </edge>
+                    </node>
+                </edge>
+                <edge num="null" var="South">
+                    <decision choice="Obama" end="null" p="null"/>
+                </edge>
+            </node>
+        </edge>
+        <edge num="null" var="50000-74999">
+            <decision choice="Obama" end="null" p="null"/>
+        </edge>
+        <edge num="null" var="30000-49999">
+            <decision choice="McCain" end="null" p="null"/>
+        </edge>
+        <edge num="null" var="Less than 30000">
+            <decision choice="Obama" end="null" p="null"/>
+        </edge>
+        <edge num="null" var="75000-99999">
+            <decision choice="Obama" end="null" p="null"/>
+        </edge>
+        <edge num="null" var="150000+">
+            <decision choice="Obama" end="null" p="null"/>
+        </edge>
+    </node>
+</Tree>
+

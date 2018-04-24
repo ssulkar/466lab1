@@ -1,5 +1,9 @@
 import random
 import math
+import logging
+logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 import d_tree
 
@@ -9,15 +13,18 @@ def c45(D, A, T, threshold):
     # TODO these can be in the same if statement
     if homogenous:
         n = d_tree.Node(dominant)
+        logger.debug('homogenous -> created node: %s' % dominant)
         return n
     # no more attributes to split on, so pick dominant classification
     elif len(A) == 0:
         n = d_tree.Node(dominant)
+        logger.debug('no attributes -> created node: %s' % dominant)
         return n
     else:
         splitAttr = selectSplittingAttribute(A, D, threshold)
         if splitAttr == None:
             n = d_tree.Node(dominant)
+            logger.debug('no split -> created node: %s' % dominant)
             return n
 
         splitIndex = A.index(splitAttr)
@@ -31,6 +38,7 @@ def c45(D, A, T, threshold):
         n = d_tree.Node(splitAttr)
         for k, v in splitData.items():
             if len(v) != 0:
+                # logger.debug('creating edge: %s' % k)
                 e = d_tree.Edge(k, c45(v, A, T, threshold))
                 n.edges.append(e)
         return n
@@ -74,14 +82,20 @@ def log(k):
 
 #TODO
 def selectSplittingAttribute (A, D, threshold):
+    logger.debug('len(D): %s' % len(D))
     p0 = entropy(D)
     gain = [0 for a in A]
     for i in range(len(gain)):
         gain[i] = p0 - entropy(A[i])
+        # debug
+        gain[i] *= -1
     
+    # logger.debug('gain[]: %s' % gain)
+    logger.debug('max(gain): %s' % max(gain))
     bestIndex = gain.index(max(gain))
     
     if gain[bestIndex] > threshold :
+        logger.debug('selected splitting attribute: %s' % A[bestIndex])
         return A[bestIndex]
     else:
         return None    
@@ -89,4 +103,5 @@ def selectSplittingAttribute (A, D, threshold):
     if len(A) < 3:
         return None
     else:
-        return A[random.randint(1, len(A) - 1)]'''
+        return A[random.randint(1, len(A) - 1)]
+    '''
