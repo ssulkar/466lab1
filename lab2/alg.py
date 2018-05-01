@@ -1,5 +1,6 @@
 import random
 import math
+from collections import OrderedDict
 import logging
 logger = logging.getLogger(__name__)
 
@@ -25,12 +26,10 @@ def c45(D, A, T, threshold):
             logger.debug('no split -> created node: %s' % dominant)
             return n
 
-        # TODO split data is different each time because its a dictionary
-        # shouldn't matter though right? why does the order of processing
-        # the tree?
         splitData = split(D, A, splitIndex)
 
-        splitAttr = A.pop(splitIndex)[0] # removes attribute from future consideration
+        A[splitIndex][1] = -1
+        splitAttr = A[splitIndex][0] # removes attribute from future consideration
         logger.debug('splitting on: %s' % splitAttr)
         n = d_tree.Node(splitAttr)
         for k, v in splitData.items():
@@ -51,7 +50,7 @@ def selectSplittingAttribute(D, A, threshold):
     
     # logger.debug('A[]: %s' % [x[0] for x in A])
     # logger.debug('gain[]: %s' % gain)
-    logger.debug('max(gain): %s' % max(gain))
+    # logger.debug('max(gain): %s' % max(gain))
     bestIndex = gain.index(max(gain))
     
     if gain[bestIndex] > threshold :
@@ -95,7 +94,7 @@ def split(D, A, splitIndex):
     for d in D:
         splitData[d[splitIndex]] = splitData.get(d[splitIndex], [])
         splitData[d[splitIndex]].append(d)
-    return splitData
+    return OrderedDict(sorted(splitData.items()))
 
 # returns dominant class and whether it is homogenous
 def getDomClass(D):
@@ -105,7 +104,7 @@ def getDomClass(D):
 
     cur_largest = 0
     cur_class = ''
-    for k, v in counters.items():
+    for k, v in OrderedDict(sorted(counters.items())).items():
         if int(v) > cur_largest:
             cur_largest = int(v)
             cur_class = k
