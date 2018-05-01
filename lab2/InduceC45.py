@@ -4,7 +4,7 @@ import json
 import xml.etree.ElementTree as ET
 
 import logging
-logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.DEBUG)
 # logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -52,9 +52,9 @@ def main():
     
     xml = d_tree.toXML(d_tree.Tree(T))
     print(xml)
-    tmp = ET.fromstring(xml)
-    tree = ET.ElementTree(tmp)
-    tree.write('output.xml')
+    # tmp = ET.fromstring(xml)
+    # tree = ET.ElementTree(tmp)
+    # tree.write('output.xml')
 
 if __name__=='__main__':
     main()
