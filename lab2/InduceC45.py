@@ -6,28 +6,49 @@ import xml.etree.ElementTree as ET
 import logging
 logging.basicConfig(level=logging.DEBUG)
 # logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 import alg
 import d_tree
 
 def main():
-    # tree = ET.parse(str(sys.argv[1]))
-    # root = tree.getroot()
+    threshold = .01
 
-    data = []
+    # TODO need to use this information in xml output
+    # maybe create object to store it, then pass it down
+    # Node and Edge objects will have new fileds for holding their values
+    # then the export only needs to use the fields on the objects it already has
+    tree = ET.parse(str(sys.argv[1]))
+    root = tree.getroot()
+
+    D = []
     with open(str(sys.argv[2]), 'r') as f:
         reader = csv.reader(f, delimiter=',')
-        data = [row for row in reader]
-    attributes = data[0]
-    A = [0 for x in range(len(data[0]))]
-    for i in range(len(data[0])):
-        A[i] = [attributes[i], int(data[1][i])]
+        D = [row for row in reader]
+    attributes = D[0]
 
+    A = [0 for x in range(len(attributes))]
+    for i in range(len(attributes)):
+        A[i] = [attributes[i], int(D[1][i])]
+
+    # ignore things in restrictions file
+    if len(sys.argv) > 3:
+        with open(str(sys.argv[3]), 'r') as f:
+            reader = csv.reader(f, delimiter=',')
+            ignore = [row for row in reader]
+            ignore = ignore[0]
+            for i, attr in enumerate(ignore):
+                if int(attr) == 0:
+                    A[i][1] = -1
+                    logger.debug('ignoring attribute %s' % A[i][0])
+
+    # ignore last column VOTE
     A[-1][1] = -1
-    data = data[3:]
 
-    threshold = .01
-    T = alg.c45(data, A, d_tree.Node('root'), threshold)
+    # grab main data
+    D = D[3:]
+
+    T = alg.c45(D, A, d_tree.Node('root'), threshold)
     
     xml = d_tree.toXML(d_tree.Tree(T))
     print(xml)
