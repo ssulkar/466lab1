@@ -52,9 +52,9 @@ def main():
     
     xml = d_tree.toXML(d_tree.Tree(T))
     print(xml)
-    # tmp = ET.fromstring(xml)
-    # tree = ET.ElementTree(tmp)
-    # tree.write('output.xml')
+    tmp = ET.fromstring(xml)
+    tree = ET.ElementTree(tmp)
+    tree.write('output.xml')
 
 if __name__=='__main__':
     main()
