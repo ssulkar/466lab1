@@ -6,7 +6,11 @@ logger = logging.getLogger(__name__)
 
 import d_tree
 
+# main C4.5 algorithm
+# takes dataset, list of [attribute, quantity] pairs,
+# a tree node, and a gain threshold
 def c45(D, A, T, threshold):
+    # plurality class and whether it was homogenous
     dominant, homogenous = getDomClass(D)
 
     # TODO these can be in the same if statement
@@ -25,11 +29,11 @@ def c45(D, A, T, threshold):
             n = d_tree.Node(dominant)
             logger.info('no split -> created node: %s' % dominant)
             return n
-
+        # split data by splitting attribute
         splitData = split(D, A, splitIndex)
 
-        A[splitIndex][1] = -1
-        splitAttr = A[splitIndex][0] # removes attribute from future consideration
+        A[splitIndex][1] = -1 # removes attribute from future consideration
+        splitAttr = A[splitIndex][0]
         logger.info('splitting on: %s' % splitAttr)
         n = d_tree.Node(splitAttr)
         for k, v in splitData.items():
@@ -39,6 +43,8 @@ def c45(D, A, T, threshold):
                 n.edges.append(e)
         return n
 
+# attempts to find an high gain attribute to split on
+# if no have a gain above threshold, return None
 def selectSplittingAttribute(D, A, threshold):
     p0 = entropy(D)
     gain = [0 for a in A]
@@ -47,16 +53,18 @@ def selectSplittingAttribute(D, A, threshold):
         if v != -1:
             index = A.index([k, v])
             gain[index] = p0 - entropyAttr(D, A, index)
+    # get highest scores
+    max_gain = max(gain)
+    best_index = gain.index(max_gain)
     
     logger.debug('gain[]: %s' % gain)
-    logger.debug('max(gain): %s' % max(gain))
-    bestIndex = gain.index(max(gain))
+    logger.debug('max_gain: %s' % max_gain)
     
-    if gain[bestIndex] > threshold :
-        logger.debug('selected splitting attribute: %s' % A[bestIndex])
-        return bestIndex
-    else:
-        return None
+    # only split if over the threshold
+    if max_gain > threshold:
+        logger.debug('selected splitting attribute: %s' % A[best_index])
+        return best_index
+    return None
 
 # calculates the entropy of a dataset given an attribute to split on
 def entropyAttr(D, A, splitIndex):
@@ -84,7 +92,7 @@ def entropy(D):
         # calculate entropy
         for n in classCount:
             n = float(n / len(D))
-            e += n * log(n)
+            e += n * log2(n)
     return -1*e
 
 # splits given data based on given attribute index
@@ -99,25 +107,32 @@ def split(D, A, splitIndex):
     # OrderedDict makes algorithm deterministic
     return OrderedDict(sorted(splitData.items()))
 
-# returns dominant class and whether it is homogenous
+# returns dominant class of dataset and whether it is homogenous
 def getDomClass(D):
     counters = {}
+    # counts the occurances of each class
     for d in D:
-        counters[getClass(d)] = counters.get(getClass(d), 0) + 1
+        classification = getClass(d)
+        # 0 if doesn't exist
+        counters[classification] = counters.get(classification, 0)
+        counters[classification] += 1
 
     cur_largest = 0
     cur_class = ''
+    # find largest class in dictionary
     for k, v in OrderedDict(sorted(counters.items())).items():
         if int(v) > cur_largest:
             cur_largest = int(v)
             cur_class = k
     return cur_class, cur_largest == len(D)
 
-def log(k):
+# log base 2 function
+def log2(k):
     val = 0
     if k!=0:
         val = math.log(k,2)
     return val
 
-def getClass(data):
-    return data[-1]
+# returns the classification of dataset, Obama or McCain
+def getClass(D):
+    return D[-1]
