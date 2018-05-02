@@ -4,7 +4,6 @@ import json
 import xml.etree.ElementTree as ET
 
 import logging
-# logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 def main(args):
@@ -29,6 +28,8 @@ def main(args):
 def classify(D, A, tree, training):
     total = len(D)
     total_correct = 0
+    #[TP, TN, FP, FN]
+    matrix = [0, 0, 0, 0]
 
     name = tree[0].attrib['var']
     for d in D:
@@ -36,21 +37,29 @@ def classify(D, A, tree, training):
         c = _classify(d, A, goal, tree[0])
 
         if training:
-            iscorrect = d[-1] == c
-            if iscorrect: total_correct += 1
+            my_isObama = c == 'Obama'
+            actual_isObama = d[-1] == 'Obama'
+            updateMatrix(matrix, my_isObama, actual_isObama)
 
-            print('%s, %s' % (d, c))
+            if d[-1] == c:
+                total_correct += 1
+
+            # print('%s, %s' % (d, c))
             # print('%s, %s' % (d[0], c))
         else:
             print('%s, %s' % (d, c))
 
     if training:
         total_incorrect = total - total_correct
+        accuracy = float(total_correct/total)
+        error = float(total_incorrect/total)
+
         print('Total classified: %s' % total)
         print('Total correct: %s' % total_correct)
         print('Total incorrect: %s' % total_incorrect)
-        print('Accuracy: %s' % float(total_correct/total))
-        print('Error rate: %s' % float(total_incorrect/total))
+        print('Accuracy: %s' % accuracy)
+        print('Error rate: %s' % error)
+        return (total, total_correct, total_incorrect, accuracy, error, matrix)
 
 def _classify(d, A, goal, node):
     logger.debug('category: %s' % node.attrib['var'])
@@ -69,6 +78,16 @@ def _classify(d, A, goal, node):
                 choice = child.attrib['choice']
                 actual = d[-1]
                 return choice
+
+def updateMatrix (matrix, classified, actual):
+    if classified == actual and actual == True:
+        matrix[0] = matrix[0] + 1
+    elif classified == actual and actual == False:
+        matrix[1] = matrix[1] + 1
+    elif classified == False and actual == True:
+        matrix[2] = matrix[2] + 1
+    elif classified == True and actual == False:
+        matrix[3] = matrix[3] + 1
 
 if __name__=='__main__':
     if len(sys.argv) < 3:
