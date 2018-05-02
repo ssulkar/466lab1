@@ -1,0 +1,1064 @@
+['3', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['4', 'Democratic', 'Liberal', 'Black', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['5', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['6', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['7', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['8', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['9', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['10', 'Independent', 'Liberal', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['11', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '150000+', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['12', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['13', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['14', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['15', 'Republican', 'Conservative', 'Other', 'Male', 'Catholic', '30000-49999', 'College', '65+', 'Midwest', 'Approve', 'McCain'], McCain
+['16', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['17', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['18', 'Independent', 'Conservative', 'White', 'Female', 'Other', '100000-149999', 'College', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['19', 'Independent', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['20', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['21', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['22', 'Democratic', 'Moderate', 'Other', 'Male', 'Protestant', '150000+', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['23', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['24', 'Democratic', 'Liberal', 'Other', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['25', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['26', 'Republican', 'Liberal', 'Black', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['27', 'Democratic', 'Liberal', 'White', 'Male', 'Other', '50000-74999', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['28', 'Independent', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['29', 'Democratic', 'Moderate', 'Other', 'Female', 'Other', '50000-74999', 'Post-Grad', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['30', 'Independent', 'Conservative', 'White', 'Female', 'Other', '100000-149999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['31', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['32', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['33', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['34', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['35', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'Post-Grad', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['36', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['37', 'Independent', 'Moderate', 'Other', 'Male', 'Protestant', '75000-99999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['38', 'Democratic', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['39', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'West', 'Disapprove', 'McCain'], McCain
+['40', 'Democratic', 'Liberal', 'Black', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['41', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['42', 'Independent', 'Moderate', 'White', 'Female', 'Other', '150000+', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['43', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['44', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['45', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', '150000+', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['46', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Approve', 'McCain'], McCain
+['47', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['48', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['49', 'Independent', 'Liberal', 'Black', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['50', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['51', 'Democratic', 'Moderate', 'Other', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['52', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['53', 'Independent', 'Moderate', 'White', 'Female', 'Other', '100000-149999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['54', 'Republican', 'Conservative', 'White', 'Female', 'Other', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['55', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['56', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['57', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['58', 'Independent', 'Liberal', 'Other', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['59', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['60', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['61', 'Republican', 'Conservative', 'Black', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['62', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['63', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '75000-99999', 'College', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['64', 'Democratic', 'Liberal', 'White', 'Male', 'Other', 'Less than 30000', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['65', 'Republican', 'Liberal', 'White', 'Male', 'Other', 'Less than 30000', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['66', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['67', 'Democratic', 'Liberal', 'White', 'Male', 'Other', 'Less than 30000', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['68', 'Independent', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['69', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['70', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['71', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['72', 'Independent', 'Moderate', 'Other', 'Male', 'Catholic', '150000+', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['73', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['74', 'Republican', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['75', 'Democratic', 'Liberal', 'White', 'Female', 'Other', '100000-149999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['76', 'Republican', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['77', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['78', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['79', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['80', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['81', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '18-29', 'West', 'Approve', 'Obama'], Obama
+['82', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['83', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['84', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['85', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'College', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['86', 'Democratic', 'Liberal', 'Black', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['87', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['88', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['89', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['90', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['91', 'Independent', 'Liberal', 'White', 'Female', 'Other', '100000-149999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['92', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'Midwest', 'Disapprove', 'McCain'], McCain
+['93', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['94', 'Independent', 'Liberal', 'Other', 'Female', 'Protestant', '100000-149999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['95', 'Republican', 'Conservative', 'Black', 'Female', 'Catholic', 'Less than 30000', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['96', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['97', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['98', 'Independent', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'Post-Grad', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['99', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['100', 'Independent', 'Moderate', 'Black', 'Female', 'Other', 'Less than 30000', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['101', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['102', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Approve', 'Obama'], Obama
+Total classified: 100
+Total correct: 100
+Total incorrect: 0
+Accuracy: 1.0
+Error rate: 0.0
+['103', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['104', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '75000-99999', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['105', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'College', '45-64', 'Northeast', 'Disapprove', 'McCain'], Obama
+['106', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['107', 'Independent', 'Moderate', 'Black', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['108', 'Republican', 'Conservative', 'Other', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['109', 'Democratic', 'Conservative', 'Black', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['110', 'Republican', 'Conservative', 'Black', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['111', 'Independent', 'Liberal', 'White', 'Male', 'Catholic', '75000-99999', 'College', '65+', 'West', 'Disapprove', 'Obama'], McCain
+['112', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['113', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '75000-99999', 'College', '65+', 'South', 'Disapprove', 'McCain'], McCain
+['114', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '75000-99999', 'College', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['115', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['116', 'Republican', 'Conservative', 'White', 'Female', 'Other', 'Less than 30000', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['117', 'Democratic', 'Liberal', 'Black', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['118', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['119', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['120', 'Republican', 'Liberal', 'Other', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['121', 'Democratic', 'Moderate', 'Other', 'Male', 'Catholic', 'Less than 30000', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['122', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['123', 'Independent', 'Conservative', 'Black', 'Female', 'Other', '50000-74999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['124', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['125', 'Republican', 'Conservative', 'White', 'Male', 'Other', '50000-74999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['126', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '150000+', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['127', 'Republican', 'Liberal', 'White', 'Male', 'Catholic', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['128', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['129', 'Republican', 'Liberal', 'Black', 'Male', 'Catholic', '100000-149999', 'Post-Grad', '45-64', 'South', 'Approve', 'Obama'], Obama
+['130', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['131', 'Republican', 'Conservative', 'White', 'Female', 'Other', '150000+', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'McCain'], McCain
+['132', 'Democratic', 'Liberal', 'White', 'Female', 'Other', 'Less than 30000', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['133', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['134', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['135', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['136', 'Democratic', 'Liberal', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['137', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['138', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['139', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['140', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['141', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['142', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['143', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['144', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['145', 'Independent', 'Moderate', 'Other', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['146', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '100000-149999', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['147', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['148', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '100000-149999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['149', 'Republican', 'Conservative', 'White', 'Male', 'Other', '100000-149999', 'College', '45-64', 'South', 'Approve', 'McCain'], McCain
+['150', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['151', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['152', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['153', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['154', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['155', 'Republican', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['156', 'Democratic', 'Conservative', 'Other', 'Female', 'Other', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['157', 'Republican', 'Liberal', 'Black', 'Male', 'Other', '30000-49999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['158', 'Independent', 'Liberal', 'Black', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['159', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'Post-Grad', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['160', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['161', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['162', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['163', 'Independent', 'Conservative', 'Other', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['164', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['165', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['166', 'Democratic', 'Moderate', 'Other', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['167', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '50000-74999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['168', 'Independent', 'Moderate', 'Other', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['169', 'Independent', 'Moderate', 'Other', 'Female', 'Catholic', '150000+', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['170', 'Democratic', 'Liberal', 'Black', 'Female', 'Catholic', '100000-149999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['171', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['172', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['173', 'Independent', 'Liberal', 'White', 'Female', 'Other', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['174', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['175', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['176', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['177', 'Independent', 'Moderate', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['178', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['179', 'Republican', 'Conservative', 'Black', 'Male', 'Catholic', '50000-74999', 'H.S. diploma or less', '45-64', 'West', 'Approve', 'Obama'], Obama
+['180', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'West', 'Approve', 'Obama'], Obama
+['181', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['182', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', 'Less than 30000', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['183', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['184', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['185', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['186', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Disapprove', 'McCain'], Obama
+['187', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['188', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['189', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['190', 'Democratic', 'Conservative', 'Other', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['191', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['192', 'Independent', 'Moderate', 'Black', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['193', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['194', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['195', 'Democratic', 'Liberal', 'White', 'Female', 'Other', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['196', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['197', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['198', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['199', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['200', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['201', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['202', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '150000+', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'McCain'], McCain
+Total classified: 100
+Total correct: 97
+Total incorrect: 3
+Accuracy: 0.97
+Error rate: 0.03
+['203', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['204', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['205', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['206', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['207', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['208', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['209', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '50000-74999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['210', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['211', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['212', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['213', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['214', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['215', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['216', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['217', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['218', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '150000+', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['219', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['220', 'Independent', 'Moderate', 'Black', 'Male', 'Other', '30000-49999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['221', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['222', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['223', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'McCain'], McCain
+['224', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['225', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['226', 'Independent', 'Moderate', 'Other', 'Female', 'Protestant', '100000-149999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['227', 'Democratic', 'Liberal', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['228', 'Independent', 'Moderate', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['229', 'Democratic', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['230', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['231', 'Democratic', 'Conservative', 'Black', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['232', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['233', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['234', 'Independent', 'Moderate', 'White', 'Female', 'Other', '75000-99999', 'H.S. diploma or less', '65+', 'South', 'Approve', 'McCain'], McCain
+['235', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['236', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['237', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['238', 'Democratic', 'Moderate', 'Other', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['239', 'Republican', 'Liberal', 'Other', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['240', 'Democratic', 'Liberal', 'Other', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['241', 'Republican', 'Moderate', 'Other', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['242', 'Independent', 'Liberal', 'Black', 'Male', 'Other', '50000-74999', 'Post-Grad', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['243', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['244', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['245', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '150000+', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['246', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['247', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['248', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['249', 'Republican', 'Liberal', 'Other', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['250', 'Democratic', 'Moderate', 'Other', 'Female', 'Other', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['251', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['252', 'Democratic', 'Conservative', 'White', 'Male', 'Other', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['253', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['254', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['255', 'Republican', 'Liberal', 'Other', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['256', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '75000-99999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['257', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['258', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '75000-99999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['259', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['260', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['261', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['262', 'Democratic', 'Conservative', 'Other', 'Female', 'Protestant', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['263', 'Democratic', 'Liberal', 'Other', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['264', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['265', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['266', 'Independent', 'Moderate', 'Black', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['267', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '18-29', 'South', 'Approve', 'Obama'], Obama
+['268', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'West', 'Disapprove', 'McCain'], McCain
+['269', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['270', 'Republican', 'Conservative', 'White', 'Male', 'Other', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['271', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['272', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['273', 'Republican', 'Liberal', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['274', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['275', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '65+', 'Northeast', 'Approve', 'Obama'], McCain
+['276', 'Democratic', 'Conservative', 'Other', 'Female', 'Other', '50000-74999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['277', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['278', 'Democratic', 'Conservative', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['279', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['280', 'Independent', 'Liberal', 'Black', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['281', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['282', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['283', 'Independent', 'Moderate', 'White', 'Male', 'Other', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['284', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['285', 'Democratic', 'Conservative', 'White', 'Female', 'Other', '150000+', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['286', 'Republican', 'Conservative', 'Other', 'Female', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['287', 'Democratic', 'Liberal', 'Black', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['288', 'Independent', 'Liberal', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['289', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['290', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['291', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['292', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['293', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['294', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['295', 'Independent', 'Liberal', 'Other', 'Male', 'Catholic', '75000-99999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['296', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['297', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['298', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['299', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['300', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['301', 'Independent', 'Conservative', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['302', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 99
+Total incorrect: 1
+Accuracy: 0.99
+Error rate: 0.01
+['303', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['304', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['305', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['306', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['307', 'Democratic', 'Conservative', 'Other', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['308', 'Democratic', 'Conservative', 'White', 'Female', 'Other', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['309', 'Republican', 'Liberal', 'Black', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['310', 'Democratic', 'Moderate', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'South', 'Approve', 'Obama'], Obama
+['311', 'Democratic', 'Conservative', 'Black', 'Male', 'Protestant', '150000+', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['312', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['313', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['314', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['315', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['316', 'Republican', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['317', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['318', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '50000-74999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['319', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['320', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['321', 'Republican', 'Moderate', 'Other', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['322', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['323', 'Democratic', 'Conservative', 'Other', 'Female', 'Other', '75000-99999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['324', 'Democratic', 'Conservative', 'Black', 'Male', 'Protestant', 'Less than 30000', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['325', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['326', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '45-64', 'West', 'Approve', 'Obama'], Obama
+['327', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['328', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['329', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['330', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['331', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['332', 'Independent', 'Liberal', 'Other', 'Female', 'Protestant', '150000+', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['333', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['334', 'Republican', 'Liberal', 'White', 'Male', 'Other', '150000+', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['335', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['336', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['337', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['338', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['339', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['340', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['341', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['342', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '150000+', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['343', 'Republican', 'Moderate', 'White', 'Female', 'Other', '75000-99999', 'College', '45-64', 'Northeast', 'Disapprove', 'McCain'], McCain
+['344', 'Democratic', 'Moderate', 'White', 'Female', 'Other', 'Less than 30000', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['345', 'Republican', 'Moderate', 'White', 'Female', 'Other', '75000-99999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['346', 'Republican', 'Moderate', 'Other', 'Female', 'Protestant', 'Less than 30000', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['347', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['348', 'Democratic', 'Conservative', 'Black', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['349', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['350', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['351', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['352', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '100000-149999', 'College', '65+', 'South', 'Disapprove', 'Obama'], McCain
+['353', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['354', 'Republican', 'Conservative', 'White', 'Female', 'Other', '100000-149999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['355', 'Independent', 'Moderate', 'White', 'Male', 'Other', '100000-149999', 'H.S. diploma or less', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['356', 'Democratic', 'Conservative', 'White', 'Female', 'Other', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['357', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'Midwest', 'Disapprove', 'McCain'], McCain
+['358', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['359', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['360', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['361', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['362', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', '100000-149999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['363', 'Democratic', 'Liberal', 'White', 'Female', 'Other', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['364', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '75000-99999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['365', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', '75000-99999', 'College', '45-64', 'Northeast', 'Disapprove', 'McCain'], McCain
+['366', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '75000-99999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['367', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['368', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['369', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['370', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['371', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['372', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['373', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['374', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '65+', 'West', 'Approve', 'Obama'], Obama
+['375', 'Independent', 'Moderate', 'Black', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['376', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['377', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['378', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', '100000-149999', 'H.S. diploma or less', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['379', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['380', 'Republican', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['381', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['382', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['383', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['384', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['385', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '75000-99999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['386', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['387', 'Independent', 'Conservative', 'White', 'Male', 'Other', 'Less than 30000', 'College', '65+', 'South', 'Disapprove', 'McCain'], McCain
+['388', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '75000-99999', 'College', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['389', 'Democratic', 'Moderate', 'White', 'Female', 'Other', 'Less than 30000', 'Post-Grad', '65+', 'South', 'Approve', 'Obama'], Obama
+['390', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['391', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['392', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['393', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['394', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['395', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['396', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['397', 'Independent', 'Liberal', 'Other', 'Male', 'Protestant', '150000+', 'Post-Grad', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['398', 'Republican', 'Conservative', 'White', 'Male', 'Other', '100000-149999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['399', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['400', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['401', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['402', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 99
+Total incorrect: 1
+Accuracy: 0.99
+Error rate: 0.01
+['403', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['404', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['405', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['406', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['407', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['408', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['409', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['410', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['411', 'Independent', 'Moderate', 'Black', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['412', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['413', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['414', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['415', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['416', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['417', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['418', 'Republican', 'Moderate', 'Other', 'Female', 'Protestant', '150000+', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['419', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '65+', 'South', 'Approve', 'Obama'], Obama
+['420', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['421', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['422', 'Democratic', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['423', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['424', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['425', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['426', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['427', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['428', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['429', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['430', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['431', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['432', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['433', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['434', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['435', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['436', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['437', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['438', 'Independent', 'Conservative', 'White', 'Female', 'Other', '150000+', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'McCain'], McCain
+['439', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '100000-149999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['440', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['441', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['442', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['443', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['444', 'Independent', 'Conservative', 'Other', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['445', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['446', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', 'Less than 30000', 'Post-Grad', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['447', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['448', 'Independent', 'Moderate', 'White', 'Male', 'Other', '50000-74999', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['449', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['450', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['451', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['452', 'Republican', 'Liberal', 'White', 'Male', 'Other', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['453', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['454', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['455', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['456', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['457', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['458', 'Republican', 'Conservative', 'Other', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '18-29', 'South', 'Approve', 'Obama'], Obama
+['459', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['460', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '100000-149999', 'H.S. diploma or less', '18-29', 'West', 'Approve', 'Obama'], Obama
+['461', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['462', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['463', 'Democratic', 'Conservative', 'White', 'Male', 'Other', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['464', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['465', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['466', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['467', 'Republican', 'Conservative', 'Other', 'Male', 'Protestant', 'Less than 30000', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['468', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['469', 'Republican', 'Liberal', 'Black', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['470', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['471', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['472', 'Democratic', 'Conservative', 'White', 'Female', 'Other', '50000-74999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['473', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['474', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['475', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['476', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['477', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Approve', 'Obama'], Obama
+['478', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['479', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['480', 'Republican', 'Conservative', 'Other', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'West', 'Approve', 'McCain'], McCain
+['481', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '75000-99999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['482', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['483', 'Republican', 'Liberal', 'Black', 'Female', 'Catholic', '150000+', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['484', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['485', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['486', 'Independent', 'Moderate', 'White', 'Male', 'Other', 'Less than 30000', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['487', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['488', 'Republican', 'Conservative', 'Other', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['489', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['490', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['491', 'Republican', 'Liberal', 'Black', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['492', 'Independent', 'Moderate', 'Black', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['493', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['494', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['495', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '150000+', 'College', '45-64', 'West', 'Disapprove', 'McCain'], McCain
+['496', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['497', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['498', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['499', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['500', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Disapprove', 'McCain'], Obama
+['501', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['502', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 99
+Total incorrect: 1
+Accuracy: 0.99
+Error rate: 0.01
+['503', 'Republican', 'Conservative', 'Other', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['504', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['505', 'Republican', 'Conservative', 'Black', 'Male', 'Catholic', '75000-99999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['506', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['507', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['508', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['509', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['510', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['511', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['512', 'Democratic', 'Conservative', 'Other', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['513', 'Republican', 'Liberal', 'Other', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['514', 'Democratic', 'Conservative', 'Black', 'Male', 'Catholic', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['515', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['516', 'Republican', 'Liberal', 'Black', 'Female', 'Catholic', '100000-149999', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['517', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['518', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['519', 'Democratic', 'Conservative', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['520', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['521', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['522', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['523', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['524', 'Republican', 'Conservative', 'White', 'Female', 'Other', '150000+', 'Post-Grad', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['525', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['526', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['527', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['528', 'Democratic', 'Liberal', 'Black', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['529', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', 'Less than 30000', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['530', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '100000-149999', 'H.S. diploma or less', '45-64', 'West', 'Approve', 'Obama'], Obama
+['531', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['532', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['533', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['534', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['535', 'Independent', 'Liberal', 'Black', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['536', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['537', 'Democratic', 'Moderate', 'Black', 'Female', 'Protestant', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['538', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '150000+', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['539', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['540', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['541', 'Democratic', 'Liberal', 'Black', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['542', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['543', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['544', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['545', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['546', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['547', 'Democratic', 'Liberal', 'Black', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['548', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '75000-99999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['549', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['550', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['551', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'South', 'Approve', 'Obama'], Obama
+['552', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['553', 'Democratic', 'Moderate', 'Black', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['554', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['555', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['556', 'Republican', 'Conservative', 'White', 'Female', 'Other', '50000-74999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['557', 'Democratic', 'Liberal', 'White', 'Female', 'Other', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['558', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['559', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['560', 'Independent', 'Moderate', 'Black', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['561', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['562', 'Republican', 'Conservative', 'Black', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['563', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['564', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['565', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', 'Less than 30000', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['566', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['567', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['568', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['569', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['570', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['571', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'College', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['572', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['573', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '65+', 'Midwest', 'Disapprove', 'McCain'], McCain
+['574', 'Independent', 'Liberal', 'Black', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['575', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['576', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['577', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'West', 'Disapprove', 'McCain'], McCain
+['578', 'Republican', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['579', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['580', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['581', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['582', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['583', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['584', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['585', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['586', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['587', 'Independent', 'Conservative', 'Black', 'Male', 'Catholic', '75000-99999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['588', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['589', 'Republican', 'Liberal', 'White', 'Male', 'Other', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['590', 'Independent', 'Moderate', 'White', 'Male', 'Other', '75000-99999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['591', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '100000-149999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['592', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['593', 'Republican', 'Moderate', 'White', 'Male', 'Other', 'Less than 30000', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['594', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['595', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['596', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['597', 'Independent', 'Moderate', 'Black', 'Female', 'Catholic', 'Less than 30000', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['598', 'Democratic', 'Liberal', 'Black', 'Female', 'Catholic', '75000-99999', 'College', '65+', 'South', 'Approve', 'Obama'], Obama
+['599', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['600', 'Republican', 'Conservative', 'White', 'Female', 'Other', '75000-99999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['601', 'Republican', 'Liberal', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['602', 'Independent', 'Moderate', 'White', 'Male', 'Other', '75000-99999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 100
+Total incorrect: 0
+Accuracy: 1.0
+Error rate: 0.0
+['603', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['604', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['605', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['606', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['607', 'Independent', 'Liberal', 'Black', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['608', 'Democratic', 'Conservative', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['609', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['610', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'Northeast', 'Disapprove', 'McCain'], McCain
+['611', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '150000+', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['612', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['613', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['614', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '45-64', 'South', 'Approve', 'McCain'], McCain
+['615', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['616', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['617', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['618', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['619', 'Independent', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['620', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['621', 'Republican', 'Liberal', 'Black', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['622', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['623', 'Independent', 'Liberal', 'Other', 'Female', 'Other', '100000-149999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['624', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '75000-99999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['625', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['626', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['627', 'Independent', 'Moderate', 'White', 'Female', 'Other', '100000-149999', 'Post-Grad', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['628', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['629', 'Republican', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['630', 'Republican', 'Moderate', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['631', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['632', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['633', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '150000+', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['634', 'Republican', 'Liberal', 'Black', 'Female', 'Catholic', '150000+', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['635', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['636', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['637', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '75000-99999', 'College', '65+', 'Midwest', 'Disapprove', 'McCain'], McCain
+['638', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['639', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['640', 'Democratic', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['641', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['642', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['643', 'Democratic', 'Conservative', 'Other', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['644', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['645', 'Republican', 'Liberal', 'Other', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['646', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', '150000+', 'Post-Grad', '45-64', 'South', 'Approve', 'McCain'], McCain
+['647', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['648', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['649', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['650', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['651', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['652', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['653', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'South', 'Disapprove', 'McCain'], McCain
+['654', 'Independent', 'Liberal', 'Other', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['655', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['656', 'Democratic', 'Conservative', 'Black', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['657', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['658', 'Independent', 'Moderate', 'White', 'Female', 'Other', '75000-99999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['659', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '150000+', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['660', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['661', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['662', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['663', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['664', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '18-29', 'West', 'Approve', 'Obama'], Obama
+['665', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['666', 'Republican', 'Moderate', 'Other', 'Male', 'Catholic', '50000-74999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['667', 'Republican', 'Liberal', 'Other', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['668', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', '75000-99999', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['669', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['670', 'Democratic', 'Liberal', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['671', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['672', 'Republican', 'Moderate', 'White', 'Female', 'Other', '30000-49999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['673', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['674', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['675', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'West', 'Approve', 'McCain'], McCain
+['676', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'South', 'Disapprove', 'McCain'], McCain
+['677', 'Democratic', 'Liberal', 'Other', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['678', 'Democratic', 'Liberal', 'Other', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'West', 'Approve', 'Obama'], Obama
+['679', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['680', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['681', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['682', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['683', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['684', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['685', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['686', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['687', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['688', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '150000+', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['689', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['690', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['691', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '100000-149999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['692', 'Republican', 'Liberal', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Approve', 'McCain'], McCain
+['693', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['694', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['695', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['696', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['697', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['698', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['699', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['700', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['701', 'Republican', 'Conservative', 'Other', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['702', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 100
+Total incorrect: 0
+Accuracy: 1.0
+Error rate: 0.0
+['703', 'Democratic', 'Liberal', 'Black', 'Male', 'Catholic', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['704', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['705', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['706', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['707', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['708', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['709', 'Democratic', 'Conservative', 'White', 'Female', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['710', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['711', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['712', 'Independent', 'Liberal', 'White', 'Male', 'Protestant', '150000+', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['713', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['714', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['715', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['716', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['717', 'Independent', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['718', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['719', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['720', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'Post-Grad', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['721', 'Independent', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['722', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', '75000-99999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['723', 'Independent', 'Liberal', 'Other', 'Female', 'Protestant', 'Less than 30000', 'H.S. diploma or less', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['724', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['725', 'Democratic', 'Liberal', 'Other', 'Female', 'Catholic', 'Less than 30000', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['726', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['727', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '65+', 'West', 'Approve', 'Obama'], Obama
+['728', 'Democratic', 'Moderate', 'Other', 'Male', 'Catholic', '50000-74999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['729', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['730', 'Republican', 'Moderate', 'White', 'Male', 'Other', '50000-74999', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['731', 'Republican', 'Moderate', 'White', 'Male', 'Other', '150000+', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['732', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'West', 'Approve', 'McCain'], McCain
+['733', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['734', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['735', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['736', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['737', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['738', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['739', 'Republican', 'Liberal', 'Black', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['740', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['741', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['742', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['743', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['744', 'Democratic', 'Conservative', 'Other', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['745', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'West', 'Approve', 'McCain'], McCain
+['746', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '18-29', 'West', 'Approve', 'Obama'], Obama
+['747', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', 'Less than 30000', 'Post-Grad', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['748', 'Republican', 'Liberal', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['749', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['750', 'Independent', 'Liberal', 'Other', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['751', 'Independent', 'Conservative', 'Black', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['752', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['753', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['754', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['755', 'Republican', 'Conservative', 'White', 'Female', 'Catholic', '100000-149999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['756', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['757', 'Republican', 'Liberal', 'White', 'Female', 'Other', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['758', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['759', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['760', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['761', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '75000-99999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['762', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['763', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '75000-99999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['764', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'Post-Grad', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['765', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['766', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', 'Less than 30000', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['767', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['768', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['769', 'Independent', 'Moderate', 'Black', 'Female', 'Other', '30000-49999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['770', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['771', 'Republican', 'Conservative', 'Black', 'Female', 'Other', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['772', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['773', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['774', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['775', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', '100000-149999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['776', 'Democratic', 'Conservative', 'Other', 'Male', 'Catholic', '150000+', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['777', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['778', 'Independent', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['779', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['780', 'Democratic', 'Moderate', 'White', 'Male', 'Other', 'Less than 30000', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['781', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['782', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['783', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['784', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['785', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['786', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '150000+', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['787', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '150000+', 'Post-Grad', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['788', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['789', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', '30000-49999', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['790', 'Democratic', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['791', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['792', 'Republican', 'Liberal', 'Other', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['793', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['794', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', '100000-149999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['795', 'Democratic', 'Moderate', 'Black', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['796', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['797', 'Democratic', 'Moderate', 'Other', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['798', 'Democratic', 'Moderate', 'Other', 'Female', 'Catholic', '150000+', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['799', 'Democratic', 'Conservative', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'West', 'Approve', 'Obama'], Obama
+['800', 'Independent', 'Liberal', 'White', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['801', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', 'Less than 30000', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['802', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+Total classified: 100
+Total correct: 100
+Total incorrect: 0
+Accuracy: 1.0
+Error rate: 0.0
+['803', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['804', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['805', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['806', 'Independent', 'Conservative', 'Other', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['807', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['808', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['809', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['810', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['811', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['812', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['813', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['814', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['815', 'Republican', 'Liberal', 'White', 'Male', 'Other', '50000-74999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['816', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['817', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '150000+', 'College', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['818', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['819', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '150000+', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['820', 'Democratic', 'Moderate', 'Black', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['821', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'H.S. diploma or less', '45-64', 'West', 'Approve', 'Obama'], Obama
+['822', 'Independent', 'Moderate', 'Other', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['823', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['824', 'Republican', 'Conservative', 'Other', 'Male', 'Other', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['825', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'College', '65+', 'Northeast', 'Approve', 'McCain'], McCain
+['826', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['827', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['828', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['829', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['830', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['831', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['832', 'Independent', 'Conservative', 'Other', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['833', 'Independent', 'Moderate', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '65+', 'Midwest', 'Disapprove', 'Obama'], Obama
+['834', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['835', 'Republican', 'Conservative', 'Black', 'Female', 'Catholic', '30000-49999', 'College', '65+', 'Northeast', 'Approve', 'Obama'], Obama
+['836', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['837', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '150000+', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['838', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '100000-149999', 'Post-Grad', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['839', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['840', 'Democratic', 'Liberal', 'Other', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['841', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['842', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', 'Less than 30000', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['843', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['844', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '65+', 'West', 'Disapprove', 'Obama'], Obama
+['845', 'Republican', 'Moderate', 'Other', 'Male', 'Catholic', 'Less than 30000', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['846', 'Democratic', 'Conservative', 'Black', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['847', 'Republican', 'Moderate', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'South', 'Approve', 'Obama'], Obama
+['848', 'Democratic', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['849', 'Independent', 'Liberal', 'Black', 'Female', 'Other', '50000-74999', 'Post-Grad', '30-44', 'South', 'Approve', 'Obama'], Obama
+['850', 'Republican', 'Conservative', 'Black', 'Male', 'Protestant', '150000+', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['851', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['852', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '30000-49999', 'College', '65+', 'West', 'Approve', 'Obama'], Obama
+['853', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '150000+', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['854', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['855', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['856', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '18-29', 'South', 'Approve', 'Obama'], Obama
+['857', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['858', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '50000-74999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['859', 'Democratic', 'Moderate', 'Other', 'Female', 'Catholic', '50000-74999', 'Post-Grad', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['860', 'Democratic', 'Liberal', 'Other', 'Male', 'Catholic', '150000+', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['861', 'Republican', 'Conservative', 'Other', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['862', 'Independent', 'Liberal', 'White', 'Female', 'Other', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['863', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '75000-99999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'McCain'], McCain
+['864', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['865', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['866', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['867', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['868', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['869', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['870', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['871', 'Independent', 'Liberal', 'White', 'Female', 'Catholic', '75000-99999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['872', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'Post-Grad', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['873', 'Democratic', 'Liberal', 'Black', 'Female', 'Catholic', '75000-99999', 'Post-Grad', '45-64', 'South', 'Approve', 'Obama'], Obama
+['874', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['875', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '30000-49999', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['876', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['877', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['878', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['879', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['880', 'Democratic', 'Moderate', 'White', 'Male', 'Catholic', '150000+', 'H.S. diploma or less', '30-44', 'South', 'Approve', 'Obama'], Obama
+['881', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['882', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '75000-99999', 'H.S. diploma or less', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['883', 'Republican', 'Moderate', 'Other', 'Male', 'Catholic', '75000-99999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['884', 'Independent', 'Liberal', 'White', 'Female', 'Protestant', '75000-99999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['885', 'Independent', 'Liberal', 'White', 'Female', 'Other', 'Less than 30000', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['886', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['887', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['888', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '18-29', 'West', 'Approve', 'Obama'], Obama
+['889', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['890', 'Democratic', 'Moderate', 'Black', 'Female', 'Protestant', '50000-74999', 'Post-Grad', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['891', 'Democratic', 'Moderate', 'Black', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['892', 'Independent', 'Moderate', 'Black', 'Male', 'Catholic', '50000-74999', 'Post-Grad', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['893', 'Independent', 'Conservative', 'White', 'Male', 'Catholic', '150000+', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['894', 'Republican', 'Conservative', 'White', 'Female', 'Other', '50000-74999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['895', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '150000+', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['896', 'Democratic', 'Conservative', 'White', 'Male', 'Other', '150000+', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['897', 'Republican', 'Liberal', 'White', 'Female', 'Protestant', '30000-49999', 'College', '18-29', 'Midwest', 'Disapprove', 'Obama'], Obama
+['898', 'Democratic', 'Moderate', 'Other', 'Female', 'Catholic', '30000-49999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['899', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['900', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', 'Less than 30000', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['901', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['902', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'West', 'Approve', 'Obama'], Obama
+Total classified: 100
+Total correct: 100
+Total incorrect: 0
+Accuracy: 1.0
+Error rate: 0.0
+['903', 'Independent', 'Moderate', 'Black', 'Male', 'Catholic', '75000-99999', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['904', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '18-29', 'Northeast', 'Approve', 'Obama'], Obama
+['905', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '18-29', 'West', 'Disapprove', 'Obama'], Obama
+['906', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'H.S. diploma or less', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['907', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '100000-149999', 'College', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['908', 'Independent', 'Liberal', 'Black', 'Female', 'Protestant', '30000-49999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['909', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['910', 'Republican', 'Conservative', 'White', 'Male', 'Protestant', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['911', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '150000+', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['912', 'Republican', 'Moderate', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['913', 'Democratic', 'Moderate', 'Other', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['914', 'Democratic', 'Moderate', 'Other', 'Male', 'Catholic', '50000-74999', 'Post-Grad', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['915', 'Republican', 'Moderate', 'Other', 'Male', 'Catholic', '50000-74999', 'College', '45-64', 'South', 'Approve', 'McCain'], McCain
+['916', 'Democratic', 'Moderate', 'Other', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['917', 'Republican', 'Liberal', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '18-29', 'Midwest', 'Approve', 'Obama'], Obama
+['918', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['919', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['920', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['921', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['922', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['923', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['924', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '45-64', 'Northeast', 'Approve', 'Obama'], Obama
+['925', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['926', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '50000-74999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['927', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '150000+', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['928', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '100000-149999', 'H.S. diploma or less', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['929', 'Republican', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'H.S. diploma or less', '65+', 'South', 'Disapprove', 'Obama'], Obama
+['930', 'Democratic', 'Conservative', 'Other', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['931', 'Republican', 'Liberal', 'White', 'Male', 'Protestant', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['932', 'Independent', 'Liberal', 'White', 'Male', 'Other', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['933', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', 'Less than 30000', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['934', 'Democratic', 'Moderate', 'White', 'Female', 'Protestant', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['935', 'Independent', 'Moderate', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '65+', 'Midwest', 'Approve', 'McCain'], McCain
+['936', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['937', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '75000-99999', 'H.S. diploma or less', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['938', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '100000-149999', 'H.S. diploma or less', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['939', 'Republican', 'Liberal', 'White', 'Male', 'Catholic', '100000-149999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['940', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['941', 'Republican', 'Moderate', 'Black', 'Male', 'Other', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['942', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['943', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['944', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['945', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', '50000-74999', 'H.S. diploma or less', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['946', 'Republican', 'Moderate', 'White', 'Female', 'Other', '50000-74999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['947', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '65+', 'South', 'Approve', 'McCain'], McCain
+['948', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'Post-Grad', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['949', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '150000+', 'College', '65+', 'Midwest', 'Approve', 'McCain'], McCain
+['950', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'South', 'Approve', 'Obama'], Obama
+['951', 'Democratic', 'Conservative', 'Other', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['952', 'Republican', 'Moderate', 'Black', 'Male', 'Catholic', 'Less than 30000', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['953', 'Democratic', 'Moderate', 'Black', 'Male', 'Other', '30000-49999', 'College', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['954', 'Independent', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'College', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['955', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'H.S. diploma or less', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['956', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'West', 'Approve', 'Obama'], Obama
+['957', 'Independent', 'Moderate', 'White', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['958', 'Democratic', 'Liberal', 'White', 'Male', 'Protestant', '100000-149999', 'H.S. diploma or less', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['959', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['960', 'Republican', 'Liberal', 'White', 'Female', 'Catholic', '100000-149999', 'College', '18-29', 'Northeast', 'Disapprove', 'Obama'], Obama
+['961', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '45-64', 'South', 'Disapprove', 'McCain'], McCain
+['962', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['963', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['964', 'Independent', 'Moderate', 'Other', 'Female', 'Other', '30000-49999', 'College', '18-29', 'South', 'Disapprove', 'Obama'], Obama
+['965', 'Independent', 'Moderate', 'Other', 'Male', 'Other', '30000-49999', 'College', '30-44', 'Midwest', 'Approve', 'Obama'], Obama
+['966', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '45-64', 'South', 'Approve', 'Obama'], Obama
+['967', 'Democratic', 'Moderate', 'Black', 'Male', 'Protestant', '50000-74999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['968', 'Democratic', 'Moderate', 'White', 'Male', 'Other', '100000-149999', 'H.S. diploma or less', '65+', 'West', 'Approve', 'Obama'], Obama
+['969', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['970', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '150000+', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['971', 'Independent', 'Conservative', 'White', 'Male', 'Protestant', '75000-99999', 'H.S. diploma or less', '30-44', 'West', 'Approve', 'Obama'], Obama
+['972', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['973', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', 'Less than 30000', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['974', 'Democratic', 'Moderate', 'White', 'Male', 'Protestant', '100000-149999', 'College', '45-64', 'Midwest', 'Disapprove', 'Obama'], Obama
+['975', 'Democratic', 'Liberal', 'White', 'Male', 'Catholic', 'Less than 30000', 'Post-Grad', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['976', 'Democratic', 'Liberal', 'White', 'Male', 'Other', 'Less than 30000', 'College', '65+', 'Northeast', 'Disapprove', 'Obama'], Obama
+['977', 'Republican', 'Moderate', 'Other', 'Male', 'Other', '30000-49999', 'H.S. diploma or less', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['978', 'Democratic', 'Moderate', 'Black', 'Male', 'Other', '50000-74999', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['979', 'Republican', 'Conservative', 'Black', 'Female', 'Protestant', '50000-74999', 'H.S. diploma or less', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['980', 'Independent', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['981', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'H.S. diploma or less', '45-64', 'Midwest', 'Approve', 'Obama'], Obama
+['982', 'Democratic', 'Conservative', 'White', 'Female', 'Protestant', '100000-149999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['983', 'Democratic', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'South', 'Disapprove', 'Obama'], Obama
+['984', 'Democratic', 'Liberal', 'White', 'Female', 'Catholic', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['985', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'H.S. diploma or less', '30-44', 'West', 'Approve', 'Obama'], Obama
+['986', 'Republican', 'Liberal', 'Black', 'Male', 'Catholic', '30000-49999', 'College', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['987', 'Independent', 'Moderate', 'White', 'Male', 'Catholic', '30000-49999', 'Post-Grad', '65+', 'Midwest', 'Approve', 'Obama'], Obama
+['988', 'Independent', 'Conservative', 'White', 'Male', 'Other', '100000-149999', 'Post-Grad', '65+', 'West', 'Approve', 'McCain'], Obama
+['989', 'Independent', 'Moderate', 'White', 'Male', 'Protestant', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['990', 'Democratic', 'Conservative', 'Other', 'Male', 'Catholic', '100000-149999', 'College', '30-44', 'Midwest', 'Disapprove', 'Obama'], Obama
+['991', 'Democratic', 'Conservative', 'White', 'Male', 'Protestant', '50000-74999', 'Post-Grad', '30-44', 'West', 'Disapprove', 'Obama'], Obama
+['992', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '50000-74999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['993', 'Independent', 'Liberal', 'White', 'Female', 'Other', '150000+', 'College', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+['994', 'Republican', 'Conservative', 'White', 'Female', 'Protestant', '75000-99999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['995', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '30000-49999', 'College', '45-64', 'Northeast', 'Disapprove', 'Obama'], Obama
+['996', 'Independent', 'Moderate', 'White', 'Female', 'Catholic', '100000-149999', 'College', '65+', 'South', 'Disapprove', 'Obama'], McCain
+['997', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'College', '45-64', 'West', 'Disapprove', 'Obama'], Obama
+['998', 'Democratic', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'College', '30-44', 'Northeast', 'Disapprove', 'Obama'], Obama
+['999', 'Republican', 'Moderate', 'White', 'Female', 'Catholic', '75000-99999', 'College', '65+', 'West', 'Disapprove', 'McCain'], McCain
+['1000', 'Republican', 'Moderate', 'White', 'Male', 'Protestant', 'Less than 30000', 'Post-Grad', '30-44', 'West', 'Approve', 'Obama'], Obama
+['1001', 'Independent', 'Conservative', 'White', 'Female', 'Catholic', '30000-49999', 'College', '30-44', 'Northeast', 'Approve', 'Obama'], Obama
+['1002', 'Republican', 'Moderate', 'Other', 'Male', 'Protestant', '30000-49999', 'Post-Grad', '30-44', 'South', 'Disapprove', 'Obama'], Obama
+Total classified: 100
+Total correct: 98
+Total incorrect: 2
+Accuracy: 0.98
+Error rate: 0.02
+
+Overall Confusion Matrix
+TP = 923
+TN = 69
+FP = 4
+FN = 4
+recall = 0.9956850053937433
+precision = 0.9956850053937433
+PF = 0.0547945205479452
+f_measure = 2.0
+overall_accuracy = 0.992
+overall_error = 0.008
+average_accuracy = 0.9920000000000002
+average_error = 0.008
