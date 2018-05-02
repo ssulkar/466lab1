@@ -2,27 +2,24 @@ import sys
 import csv
 import json
 import xml.etree.ElementTree as ET
-
 import logging
-# logging.basicConfig(level=logging.DEBUG)
-# logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 import alg
 import d_tree
 
-def main():
+def main(args):
     threshold = .01
 
     # TODO need to use this information in xml output
     # maybe create object to store it, then pass it down
     # Node and Edge objects will have new fileds for holding their values
     # then the export only needs to use the fields on the objects it already has
-    tree = ET.parse(str(sys.argv[1]))
+    tree = ET.parse(str(args[1]))
     root = tree.getroot()
 
     D = []
-    with open(str(sys.argv[2]), 'r') as f:
+    with open(str(args[2]), 'r') as f:
         reader = csv.reader(f, delimiter=',')
         D = [row for row in reader]
     attributes = D[0]
@@ -32,8 +29,8 @@ def main():
         A[i] = [attributes[i], int(D[1][i])]
 
     # ignore things in restrictions file
-    if len(sys.argv) > 3:
-        with open(str(sys.argv[3]), 'r') as f:
+    if len(args) > 3:
+        with open(str(args[3]), 'r') as f:
             reader = csv.reader(f, delimiter=',')
             ignore = [row for row in reader]
             ignore = ignore[0]
@@ -57,4 +54,4 @@ def main():
     tree.write('output.xml')
 
 if __name__=='__main__':
-    main()
+    main(sys.argv)
