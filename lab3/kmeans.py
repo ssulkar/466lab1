@@ -10,14 +10,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 class Cluster:
-    def __init__(self, centroid):
+    def __init__(self, centroid, index):
+        self.index = index
         # center is average of all the points. updated with recalculate()
         self.centroid = centroid
         # list of points in this cluster
         self.points = []
 
     def __repr__(self):
-        return 'Centroid: center: %s, size: %s\n' % (self.centroid, self.size())
+        s = 'Cluster %s:\nCenter: %s,\n' % (self.index, self.centroid)
+        distances = list(map(self.distance, self.points))
+        s += 'Max Dist. to Center: %s\nMin Dist. to Center: %s\nAvg Dist. to Center: %s\n' % (max(distances), min(distances), float(sum(distances)/len(distances)))
+        s += '%s Points:\n' % (self.size())
+        for point in self.points:
+            s += '%s\n' % str(point)
+        return s
 
     def __contains__(self, point):
         return point in self.points
@@ -51,9 +58,8 @@ class Cluster:
 def main(args):
     filename = args[1]
     k = int(args[2])
-    print('filename: %s' % filename)
-    print('k: %s' % k)
 
+    # open file and load data
     data = getData(filename)
 
     # list of Centroids, each with its list of points in its cluster
@@ -69,6 +75,7 @@ def main(args):
     loopCount = 0
     MAX_ITERATIONS = 500
 
+    # loop until no points move or hard stop
     while hasChanged and loopCount < MAX_ITERATIONS:
         loopCount += 1
 
@@ -85,6 +92,10 @@ def main(args):
                     movePoint(point, cluster, closest)
                     hasChanged = True
                     
+    # output based on spec
+    for cluster in clusters:
+        print(cluster)
+
     # OPTION: create png image of the different clusters
     if '-i' in args:
         for cluster in clusters:
@@ -104,7 +115,7 @@ def getInitialClusters(data, k):
         if point not in centroids:
             centroids.append(point)
     # wrap in Centroid object
-    return [Cluster(c) for c in centroids]
+    return [Cluster(c, i) for i, c in enumerate(centroids)]
 
 def getClosestCluster(point, clusters):
     closestDist = sys.maxsize
