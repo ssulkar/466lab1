@@ -7,17 +7,22 @@ import random
 import csv
 
 import matplotlib.pyplot as plt
-import numpy as np
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# Clusters are groupings of data points. Each cluster has a centroid
+# that represents the average of all the points in the Cluster.
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 class Cluster:
     def __init__(self, centroid, index):
+        # needed for output
         self.index = index
-        # center is average of all the points. updated with recalculate()
+        # centroid is the average of all the points. updated with recalculate()
         self.centroid = centroid
         # list of points in this cluster
         self.points = []
 
     def __repr__(self):
+        # output based on spec
         s = 'Cluster %s:\nCenter: %s,\n' % (self.index, self.centroid)
         distances = list(map(self.distance, self.points))
         s += 'Max Dist. to Center: %s\nMin Dist. to Center: %s\nAvg Dist. to Center: %s\n' % (max(distances), min(distances), float(sum(distances)/len(distances)))
@@ -32,30 +37,40 @@ class Cluster:
     def size(self):
         return len(self.points)
 
+    def dimensions(self):
+        return len(self.centroid)
+
     def add(self, point):
         self.points.append(point)
 
     def remove(self, point):
-        return self.points.remove(point)
+        self.points.remove(point)
 
     def distance(self, point):
         s = sum([(point[i] - self.centroid[i])**2 for i in range(0, len(point))])
         return math.sqrt(s)
 
     def recalculate(self):
-        col_range = range(0, len(self.centroid))
-
+        col_range = range(0, self.dimensions())
         temp_sum = [0 for i in col_range]
+
+        # sum up data by column
         for point in self.points:
             temp_sum = [temp_sum[i] + point[i] for i in col_range]
 
+        # divide each column by size to get average
         avg_point = [float(temp_sum[i]/self.size()) for i in col_range]
         self.centroid = avg_point
 
-    def plot(self):
-        plt.scatter([p[0] for p in self.points], [p[1] for p in self.points])
+    def plot(self, x_index, y_index):
+        plt.scatter([p[x_index] for p in self.points], [p[y_index] for p in self.points])
+        plt.scatter(self.centroid[x_index], self.centroid[y_index], c='k', s=10**2, marker='^')
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# Main program
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 def main(args):
+    # command line args
     filename = args[1]
     k = int(args[2])
 
@@ -92,16 +107,35 @@ def main(args):
                     movePoint(point, cluster, closest)
                     hasChanged = True
                     
-    # output based on spec
+    # output cluster information
     for cluster in clusters:
         print(cluster)
 
-    # OPTION: create png image of the different clusters
-    if '-i' in args:
+    # OPTION: create a png image for each combination of dimensions in 2D
+    # for example, a dataset with dimensions (x, y, z) will generate 3 graphs:
+    # f(x,y), f(x,z), f(y,z)
+    # useful for determining the overall shape of the data
+    if '-a' in args:
+        for i in range(0, clusters[0].dimensions()):
+            for j in range(i, clusters[0].dimensions()):
+                if i != j:
+                    for cluster in clusters:
+                        cluster.plot(i, j)
+                    plt.savefig('%s_k%s_%s_%s' % (filename.split('.')[0], k, i, j))
+                    plt.clf()
+                    
+    # OPTION: create single png image of the different clusters
+    # ARGS: the index of the columns to use for graphing in 2D
+    elif '-i' in args:
+        x_index = int(args[args.index('-i') + 1])
+        y_index = int(args[args.index('-i') + 2])
         for cluster in clusters:
-            cluster.plot()
-        plt.savefig('%s_%s' % (filename.split('.')[0], k))
+            cluster.plot(x_index, y_index)
+        plt.savefig('%s_k%s_%s_%s' % (filename.split('.')[0], k, x_index, y_index))
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# Helper functions
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 def movePoint(point, fromCluster, toCluster):
     # transfer point from one cluster to another
     fromCluster.remove(point)
@@ -135,7 +169,9 @@ def getData(filename):
     rows = []
     with open(filename, 'r') as f:
         reader = csv.reader(f)
-        rows = [[int(i) for i in r] for r in reader]
+        header = next(reader)
+        # uses header to determine if column should be ignored
+        rows = [[float(data) for i, data in enumerate(r) if header[i] != '0'] for r in reader if len(r) > 0]
     return rows
 
 if __name__ == '__main__':
