@@ -20,11 +20,11 @@ def main(args):
 	    threshold = args[2]'''
 
 def testingstuff():
-    C = [[2,2],[2,3],[3,4],[2,1],[6,10],[1,4],[5,1]]
+    D = [[2,2],[2,3],[3,4],[2,1],[6,10],[1,4],[5,1]]
     #print(createDistanceMatrix(C))
     #print(nsmallest(1,createDistanceMatrix(C)[0]))
     #print(getMinimumValue(createDistanceMatrix(C)))
-    print(agglomerative(C))
+    agglomerative(D))
 
 def distanceFormula(a, b):
     return (math.sqrt(((a[0] - b[0])**2) + ((a[1] - b[1])**2)))
@@ -45,10 +45,9 @@ def argMin (distanceMatrix):
             elif (currentValue != 0 and currentValue < smallestValue):
                 smallestValue = currentValue
                 row, col = i, j
-    return row, col
+    return row, col    
 
-    
-    
+#def averageLinkMethod():
 def agglomerative(D):
     C = D[:]
     i = 1
@@ -57,10 +56,15 @@ def agglomerative(D):
         for j in range(len(C)):
             for k in range(j+1, len(C)):
                 distanceMatrix[j][k] = distanceFormula(C[j], C[k])
-        s, r = (argMin(distanceMatrix))
-        #for j in range(len(C)):
-            #if j != r and j != s:
-                #join clusters
+        s, r = argMin(distanceMatrix)
+        #TODO need to use averageLink to merge clusters.
+        '''for j in range(len(C)-1):
+            if j != r and j != s:
+                C[j+1] = C[j]
+            elif j == r:
+                C[j] = C[r], C[s]'''
+        print (distanceMatrix)
+        print (s, r)
         break
     
 if __name__ == '__main__':
