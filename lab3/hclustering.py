@@ -21,32 +21,48 @@ def main(args):
 
 def testingstuff():
     C = [[2,2],[2,3],[3,4],[2,1],[6,10],[1,4],[5,1]]
-    print(distanceMatrix(C))
+    #print(createDistanceMatrix(C))
+    #print(nsmallest(1,createDistanceMatrix(C)[0]))
+    #print(getMinimumValue(createDistanceMatrix(C)))
+    print(agglomerative(C))
 
+def distanceFormula(a, b):
+    return (math.sqrt(((a[0] - b[0])**2) + ((a[1] - b[1])**2)))
+    
+def initializeDistanceMatrix(dimension):
+    distanceMatrix = [[0 for i in range(dimension)] for j in range(dimension)]
+    return distanceMatrix
 
-# C is a list of points ex: [[1,1],[1,2]]
-# returns matrix of distances ex: [[0,1],[0,1]]
-def createDistanceMatrix(C):
-    matrix = []
-    for i, a in enumerate(C):
-        currentRow = []
-        for j, b in enumerate(C):
-            distance = (math.sqrt(((a[0] - b[0])**2) + ((a[1] - b[1])**2)))
-            currentRow.append(distance)
-        matrix.append(currentRow)
-    return matrix
+def argMin (distanceMatrix):
+    smallestValue = 0
+    row, col = 0, 0
+    for i in range(len(distanceMatrix)):
+        for j in range(len(distanceMatrix)):
+            currentValue = distanceMatrix[i][j]
+            if (smallestValue == 0):
+                smallestValue = currentValue 
+                row, col = i, j
+            elif (currentValue != 0 and currentValue < smallestValue):
+                smallestValue = currentValue
+                row, col = i, j
+    return row, col
+
+    
     
 def agglomerative(D):
-    # each point is assigned its own cluster
-    clusters = D[:]
-    # stop merging when all clusters are merged into one cluster
-    while len(clusters) > 1:
-        # compute distance matrix
-        d = createDistanceMatrix(clusters)
-        # select a pair of clusters with the shortest distance
-        minDistances = nsmallest(2, distanceMatrix)        
-    return clusters
-
+    C = D[:]
+    i = 1
+    while len(C) > 1:
+        distanceMatrix = initializeDistanceMatrix(len(C))
+        for j in range(len(C)):
+            for k in range(j+1, len(C)):
+                distanceMatrix[j][k] = distanceFormula(C[j], C[k])
+        s, r = (argMin(distanceMatrix))
+        #for j in range(len(C)):
+            #if j != r and j != s:
+                #join clusters
+        break
+    
 if __name__ == '__main__':
     args = sys.argv
     main(args)
