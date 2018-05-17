@@ -8,6 +8,8 @@ import csv
 
 import matplotlib.pyplot as plt
 
+PRINT_POINTS = False
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # Clusters are groupings of data points. Each cluster has a centroid
 # that represents the average of all the points in the Cluster.
@@ -27,8 +29,9 @@ class Cluster:
         distances = list(map(self.distance, self.points))
         s += 'Max Dist. to Center: %s\nMin Dist. to Center: %s\nAvg Dist. to Center: %s\n' % (max(distances), min(distances), float(sum(distances)/len(distances)))
         s += '%s Points:\n' % (self.size())
-        for point in self.points:
-            s += '%s\n' % str(point)
+        if PRINT_POINTS:
+            for point in self.points:
+                s += '%s\n' % str(point)
         return s
 
     def __contains__(self, point):
@@ -74,25 +77,40 @@ def main(args):
     filename = args[1]
     k = int(args[2])
 
+    global PRINT_POINTS
+    # verbose cluster logging
+    if '-v' in args:
+        PRINT_POINTS = True
+
+    # internal stop conditions
+    MAX_ITERATIONS = 500
+    MIN_CHANGES = 1
+
     # open file and load data
     data = getData(filename)
 
-    # list of Centroids, each with its list of points in its cluster
-    clusters = getInitialClusters(data, k)
+    # list of clusters
+    clusters = []
+    # deterministic cluster starting points
+    if '-d' in args:
+        clusters = getDistributedClusters(data, k)
+    # defaults to random starting centroids
+    else:
+        clusters = getRandomClusters(data, k)
 
     # add points to closest initial centroid
     for d in data:
         closest = getClosestCluster(d, clusters)
         closest.add(d)
 
-    # track whether any points have moved
-    hasChanged = True
+    # track how many points have moved
+    changes = MIN_CHANGES + 1
     loopCount = 0
-    MAX_ITERATIONS = 500
 
     # loop until no points move or hard stop
-    while hasChanged and loopCount < MAX_ITERATIONS:
+    while changes > MIN_CHANGES and loopCount < MAX_ITERATIONS:
         loopCount += 1
+        changes = 0
 
         # recalculate the centroid centers
         [c.recalculate() for c in clusters]
@@ -105,7 +123,7 @@ def main(args):
                 if closest != cluster:
                     # move from cluster to closest
                     movePoint(point, cluster, closest)
-                    hasChanged = True
+                    changes += 1
                     
     # output cluster information
     for cluster in clusters:
@@ -141,7 +159,12 @@ def movePoint(point, fromCluster, toCluster):
     fromCluster.remove(point)
     toCluster.add(point)
 
-def getInitialClusters(data, k):
+def getDistributedClusters(data, k):
+    # deterministic for now, to make testing easier
+    # grab k evenly distributed points
+    return [Cluster(data[i], index) for index, i in enumerate(range(0, len(data), math.ceil(len(data)/k)))]
+
+def getRandomClusters(data, k):
     # pick random points from dataset, must be unique
     centroids = []
     while len(centroids) < k:
