@@ -23,7 +23,7 @@ for a dataset
 
 ##Hierarchical
 
-python3 hierarchical.py <data.csv> <threshold>
+python3 hclustering.py <data.csv> <threshold>
 
 ##DBSCAN
 
