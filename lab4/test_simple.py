@@ -11,33 +11,43 @@ def test_compute_TF_IDF():
     doc1 = raw1.split(' ')
     doc2 = raw2.split(' ')
 
-    tf_dict = vector.compute_TF(doc1)
-    idf_dict = vector.compute_IDF([doc1, doc2])
-    tf_idf_dict = vector.compute_TF_IDF(tf_dict, idf_dict)
-    pp(tf_idf_dict)
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary(doc_list)
+
+    tf_table = vector.compute_TF(doc_list, vocab)
+    idf_table = vector.compute_IDF(doc_list, vocab)
+    tf_idf_table = vector.compute_TF_IDF(tf_table, idf_table)
+    pp(tf_idf_table)
 
 def test_compute_IDF():
     doc1 = raw1.split(' ')
     doc2 = raw2.split(' ')
 
-    idf_dict = vector.compute_IDF([doc1, doc2])
-    assert idf_dict['cat'] == 0.6931471805599453
-    assert idf_dict['this'] == 0
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary(doc_list)
+
+    idf_table = vector.compute_IDF(doc_list, vocab)
+    assert idf_table[vocab.index('cat')] == 0.6931471805599453
+    assert idf_table[vocab.index('this')] == 0
 
 def test_compute_TF():
-    doc = raw1.split(' ')
+    doc1 = raw1.split(' ')
+    doc2 = raw2.split(' ')
 
-    tf_dict = vector.compute_TF(doc)
-    assert tf_dict['cat'] == 1
-    assert tf_dict['this'] == .5
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary(doc_list)
+
+    tf_table = vector.compute_TF(doc_list, vocab)
+    term = vocab.index('cat')
+    assert tf_table[0][term] == 2
+    assert tf_table[1][term] == 0
 
 def test_get_vocabulary():
-    doc = raw1.split(' ')
-    vocab = vector.get_vocabulary([doc])
-    assert len(vocab) == 6
-
+    doc1 = raw1.split(' ')
     doc2 = raw2.split(' ')
-    vocab = vector.get_vocabulary([doc, doc2])
+    
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary([doc1, doc2])
     assert len(vocab) == 10
 
 def test_read_file():
@@ -59,8 +69,9 @@ def test_full():
     doc1 = parse.parse_doc(data1)
     doc2 = parse.parse_doc(data2)
 
-    tf_dict1 = vector.compute_TF(doc1)
-    tf_dict2 = vector.compute_TF(doc2)
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary(doc_list)
 
-    idf_dict = vector.compute_IDF([doc1, doc2])
-    assert len(idf_dict) == 476
+    tf_table = vector.compute_TF(doc_list, vocab)
+    idf_table = vector.compute_IDF(doc_list, vocab)
+    assert len(idf_table) == 476
