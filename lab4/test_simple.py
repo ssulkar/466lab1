@@ -7,6 +7,33 @@ raw1 = "this cat a b c d cat"
 raw2 = "this sentence talks about a dog"
 raw3 = "this. sentence \ttalks, about \n      a dog"
 
+def test_Vector():
+    doc1 = raw1.split(' ')
+    doc2 = raw2.split(' ')
+
+    doc_list = [doc1, doc2]
+    vocab = vector.get_vocabulary(doc_list)
+    
+    v = vector.Vector(doc_list)
+    v.compute_TF_IDF()
+    assert v.tf_idf_table[0][vocab.index('cat')] == 1.3862943611198906
+
+def test_Vector_file():
+    doc1 = raw1.split(' ')
+    doc2 = raw2.split(' ')
+
+    doc_list = [doc1, doc2]
+
+    v1 = vector.Vector(doc_list)
+    v1.compute_TF_IDF()
+    v2 = vector.Vector()
+
+    filename = 'test.npy'
+    v1.save(filename)
+    v2.load(filename)
+
+    assert (v1.tf_idf_table == v2.tf_idf_table).all()
+
 def test_compute_TF_IDF():
     doc1 = raw1.split(' ')
     doc2 = raw2.split(' ')
@@ -17,7 +44,7 @@ def test_compute_TF_IDF():
     tf_table = vector.compute_TF(doc_list, vocab)
     idf_table = vector.compute_IDF(doc_list, vocab)
     tf_idf_table = vector.compute_TF_IDF(tf_table, idf_table)
-    pp(tf_idf_table)
+    assert tf_idf_table[0][vocab.index('cat')] == 1.3862943611198906
 
 def test_compute_IDF():
     doc1 = raw1.split(' ')

@@ -31,18 +31,40 @@ class Vector:
 
     """
 
-    def __init__(self):
-        pass
+    def __init__(self, doc_list=[], filename=None):
+        self.doc_list = doc_list
+        self.vocab = []
+        self.tf_idf_table = None
+        self.filename = filename
 
     def __repr__(self):
         return 'TODO repr'
 
-    def simscore_cosine(self, other):
+    def compute_TF_IDF(self):
+        self.vocab = get_vocabulary(self.doc_list)
+        tf_table = compute_TF(self.doc_list, self.vocab)
+        idf_table = compute_IDF(self.doc_list, self.vocab)
+        self.tf_idf_table = compute_TF_IDF(tf_table, idf_table)
+        return self.tf_idf_table
+
+    def load(self, filename):
+        self.filename = filename
+        self.tf_idf_table = np.load(filename)
+
+    def save(self, filename):
+        self.filename = filename
+        np.save(filename, self.tf_idf_table)
+
+    def simscore_cosine(self, query):
         """The similarity of two vectors using cosine"""
+        if query not in self.vocab:
+            return 0
         return 0
 
-    def simscore_okapi(self, other):
+    def simscore_okapi(self, query):
         """The similarity of two vectors using okapi"""
+        if query not in self.vocab:
+            return 0
         return 0
 
 def compute_TF_IDF(tf_table, idf_table):
