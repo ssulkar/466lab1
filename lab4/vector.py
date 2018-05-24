@@ -2,6 +2,8 @@ import math
 
 import numpy as np
 
+import utils
+
 class VectorCollection:
     """A class for storing tf-idf vector representations of text documents
 
@@ -39,6 +41,14 @@ class VectorCollection:
     def save(self, filename):
         np.save(filename, self.tf_idf_table)
 
+    def save_to_dir(self, out_dir):
+        self.doc_col.save(out_dir)
+        np.save(utils.get_vector_cache_name(out_dir), self.tf_idf_table)
+
+    def load_from_dir(self, in_dir):
+        self.doc_col.load(in_dir)
+        self.tf_idf_table = np.load(utils.get_vector_cache_name(in_dir))
+
 def compute_TF_IDF(tf_table, idf_table):
     tf_idf_table = np.zeros(shape=tf_table.shape)
     for i, doc in enumerate(tf_table):
@@ -62,7 +72,7 @@ def compute_TF(doc_list, vocab):
     return tf_table
 
 def _get_term_count(term, doc):
-    return doc.count(term)
+    return np.count_nonzero(np.array(doc) == term)
 
 def _normalize(x, max):
     return float(x / max)
