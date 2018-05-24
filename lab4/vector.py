@@ -2,70 +2,42 @@ import math
 
 import numpy as np
 
-class Vector:
+class VectorCollection:
     """A class for storing tf-idf vector representations of text documents
 
-    Want to store data in a format like this:
+    Store data in a numpy array format like this:
 
-        |     | word  | word  | word  | word  | word  | word  | word  | word  |
-        -----------------------------------------------------------------------
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
-
-    Do I store it as:
-        vocabulary = [word, ...]
-        docs = [doc, ...]
-        tf-idf = [[0.001, ...], ...]
+        |     | word  | word  | word  | word  | word  |
+        -----------------------------------------------
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
+        | doc | 0.001 | 0.001 | 0.001 | 0.001 | 0.001 |
 
     """
 
-    def __init__(self, doc_list=[], filename=None):
-        self.doc_list = doc_list
-        self.vocab = []
+    def __init__(self, doc_col):
+        self.doc_col = doc_col
         self.tf_idf_table = None
-        self.filename = filename
 
     def __repr__(self):
         return 'TODO repr'
 
     def compute_TF_IDF(self):
-        self.vocab = get_vocabulary(self.doc_list)
-        tf_table = compute_TF(self.doc_list, self.vocab)
-        idf_table = compute_IDF(self.doc_list, self.vocab)
+        tf_table = compute_TF(self.doc_col.doc_list, self.doc_col.vocab)
+        idf_table = compute_IDF(self.doc_col.doc_list, self.doc_col.vocab)
         self.tf_idf_table = compute_TF_IDF(tf_table, idf_table)
         return self.tf_idf_table
 
     def load(self, filename):
-        self.filename = filename
         self.tf_idf_table = np.load(filename)
 
     def save(self, filename):
-        self.filename = filename
         np.save(filename, self.tf_idf_table)
-
-    def simscore_cosine(self, query):
-        """The similarity of two vectors using cosine"""
-        if query not in self.vocab:
-            return 0
-        return 0
-
-    def simscore_okapi(self, query):
-        """The similarity of two vectors using okapi"""
-        if query not in self.vocab:
-            return 0
-        return 0
 
 def compute_TF_IDF(tf_table, idf_table):
     tf_idf_table = np.zeros(shape=tf_table.shape)
@@ -95,15 +67,7 @@ def _get_term_count(term, doc):
 def _normalize(x, max):
     return float(x / max)
 
-def get_vocabulary(doc_list):
-    vocab = []
-    for doc in doc_list:
-        for word in doc:
-            if word not in vocab: vocab.append(word)
-    return vocab
-
 def compute_IDF(doc_list, vocab):
-    vocab = get_vocabulary(doc_list)
     # might need to initialize this
     doc_counts = []
     for word in vocab:
