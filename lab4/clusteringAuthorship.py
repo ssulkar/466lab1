@@ -3,39 +3,22 @@ import csv
 import math
 import numpy as np
 from heapq import nsmallest
-'''from xml.etree.ElementTree import ElementTree
-from xml.etree.ElementTree import Element
-from xml.etree import ElementTree as ET'''
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 
 def main(args):
     if (len(args) < 2 or len(args) > 3):
         print("Usage: python3 hclustering <Filename> [<threshold>]")
-    else: 
-        filename = args[1]
+    else:
+        data = np.load(args[1])
+        #data = [[1, 0], [3, 0], [6, 0]]
         
-        #Threshold???
-        threshold = 0
-        if(len(args) == 3):
-            threshold = args[2]
-        
-        rows = []
-        with open(filename, 'r') as f:
-            reader = csv.reader(f)
-            header = next(reader)
-            rows = [[float(data) for i, data in enumerate(r) if header[i] != '0'] for r in reader if len(r) > 0]
-        
-        C = agglomerative(rows)
-        
-        #print XML???
+        C = agglomerative(data, 1)
         newFileName = args[1]+".xml"
-        print(C)
-        printXML(C, newFileName)
+        printXML(C, newFileName) 
         
 # distance between n-D points
 def distanceFormula(a, b):
-    #return (math.sqrt(((a[0] - b[0])**2) + ((a[1] - b[1])**2)))
     sum = 0
     for i in range(len(a)):
         sum += (a[i]-b[i])**2
@@ -72,7 +55,7 @@ def singleLinkMethod(distanceMatrix, s, r):
     return distanceMatrix
         
 
-def agglomerative(D):
+def agglomerative(D, csize):
     C = [(tuple(point)) for point in D]
     
     # create distanceMatrix
@@ -80,8 +63,8 @@ def agglomerative(D):
     for j in range(len(C)):
         for k in range(j+1, len(C)):
             distanceMatrix[j][k] = distanceFormula(C[j], C[k])
-      
-    while len(C) > 1:
+    print(len(C)) 
+    while len(C) > csize:#> 1:
         # indexes of two closest clusters
         s, r, height = argMin(distanceMatrix)
         # recalculate distance matrix
@@ -94,19 +77,15 @@ def agglomerative(D):
 #[[[(1, 0), (3, 0), 2.0], (6, 0), 5.0]]
 
 def printXML (C, newFileName):
-    #tree = None
     root = None
     for i in range(len(C[0])):
         if(isinstance(C[0][i], float)):
             root = ET.Element("Tree")
             root.text = "Height: " + str(C[0][i])
-            #tree = ElementTree(root)
-            C[0].pop(i)
+            
+            #C[0].pop(i)
             printXMLHelper(C[0], root)
             break
-    #ET.dump(root)
-    #print (etree.tostring(root))
-    #root.write(open('testing.xml', 'wb'))
     
     uglyxml = ET.tostring(root, encoding='utf8', method='xml')
     parsexml = xml.dom.minidom.parseString(uglyxml)
@@ -114,8 +93,6 @@ def printXML (C, newFileName):
     f = open(newFileName, "w")
     f.write(parsexml.toprettyxml())
     f.close()
-    
-    print(parsexml.toprettyxml())
     
 def printXMLHelper(C, root):
     #tuple
@@ -154,70 +131,6 @@ def printXMLHelper(C, root):
             #ElementTree.SubElement(root, currentRoot)
             #root.append(currentRoot)
     
-'''    
-    if(node != None):
-        printXMLHelper(node, currentRoot)    
-'''    
-
-'''
-def printXML (C):
-    #print(C)
-    tree = None
-    root = None
-    for i in range(len(C[0])):
-        if(isinstance(C[0][i], float)):
-            root = Element("Tree")
-            root.text = "Height: " + str(C[0][i])
-            tree = ElementTree(root)
-            C[0].pop(i)
-            printXMLHelper(C[0], root)
-            break
-    
-    print (etree.tostring(root))
-    tree.write(open('testing.xml', 'wb'))
-    
-def printXMLHelper(C, root):
-    #tuple
-    leaves = []
-    #list
-    node = None
-    #float
-    height = None    
-    
-    currentRoot = None
-    
-    for i in range(len(C)):
-        if(isinstance(C[i], tuple)):
-            leaves.append(C[i])
-        elif(isinstance(C[i], list)):
-            node = C[i]
-        elif(isinstance(C[i], float)):
-            height = C[i]
-            
-            
-    if(height != None):
-        currentRoot = Element("Node")
-        currentRoot.text = "Height: " + str(height)
-        root.append(currentRoot)
-        #printXMLHelper(node, root)        
-    
-    if(len(leaves) != 0):
-        for i in range(len(leaves)):
-            currentRoot = Element("Leaf")
-            currentRoot.text = str(leaves[i])
-            ElementTree.SubElement(root, currentRoot)
-            #root.append(currentRoot)
-            
-    if(node != None):
-        printXMLHelper(node, currentRoot)
-    if(height != None):
-        currentRoot = Element("Node")
-        currentRoot.text = "Height: " + str(height)
-        root.append(currentRoot)
-        
-'''
-            
-
    
 if __name__ == '__main__':
     args = sys.argv
