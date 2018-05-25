@@ -1,58 +1,57 @@
 from pprint import pprint as pp
-
 import numpy as np
 
+import vector
+import utils
+
 def simscore_cosine(data, other):
-    """The similarity of two vectors using cosine"""
-    stack = np.vstack((data, other))
-    norm = stack.copy()
-    norm[norm[:,:] != 0] = 1
-    norm = norm.astype(int)
-    indices = np.bitwise_and.reduce(norm)
+    """The similarity of two vectors using cosine
+    Expects two numpy arrays
+    """
+    numerator = np.sum(np.multiply(data, other))
 
-    top = stack[0][indices[:] == 1]
-    bot = stack[1][indices[:] == 1]
-    numerator = np.sum(np.multiply(top, bot))
+    data_sqrt = np.sqrt(np.sum(data**2))
+    other_sqrt = np.sqrt(np.sum(other**2))
+    denominator = data_sqrt * other_sqrt
 
-    top = np.sqrt(np.sum(top**2))
-    bot = np.sqrt(np.sum(bot**2))
-    denominator = top * bot
-
-    if denominator == 0: score = 0
-    else: score = round(numerator / denominator, 4)
-    return score
+    if denominator == 0: return 0
+    return round(numerator / denominator, 4)
 
 def simscore_okapi(data, other):
     """The similarity of two vectors using okapi"""
     return 0
 
 class KNNClassifier:
-    def __init__(self, k):
-        self.X = []
-        self.y = []
+    def __init__(self, vec_col, k):
+        self.vec_col = vec_col
         self.k = k
-
-    def train(self, X, y):
-        self.X = X
-        self.y = y
+        self.X = vec_col.tf_idf_table
 
     def classify(self, new_data):
+        """Expects numpy array"""
         scores = np.zeros((new_data.shape[0], self.X.shape[0]))
-        pp(scores.shape)
         for data in new_data:
             temp = []
             for row in self.X:
                 score = simscore_cosine(row, data)
                 temp.append(score)
             temp = np.array(temp).reshape(1, self.X.shape[0])
-            pp(temp.shape)
             scores = np.append(temp, scores, axis=0)
         return np.array(scores)
 
-
-
-
-
+    def classify_query(self, query):
+        """Expects numpy array"""
+        vocab = self.vec_col.doc_col.vocab
+        # vec = np.zeros(len(vocab))
+        # tf = vector.compute_TF([query], vocab)
+        # pp('tf nonzeros:')
+        # pp(tf[tf != 0])
+        # idf = vector.compute_IDF([query], vocab)
+        # pp('idf nonzeros:')
+        # pp(idf[idf != 0])
+        # tf_idf = vector.compute_TF_IDF(tf, idf)
+        tf_idf = vector.real_compute_tfidf([query], vocab)
+        return tf_idf
 
 """
 >>> a

@@ -13,14 +13,19 @@ def test_KNNClassifier():
     doc_col = parse.get_doc_collection([])    
     v = vector.VectorCollection(doc_col)
 
+    # use small sample data
     v.load_from_dir('small')
+    # v.tf_idf_table = v.tf_idf_table[:5]
 
     k = 1
-    classifier = knn.KNNClassifier(k)
+    classifier = knn.KNNClassifier(v, k)
     assert classifier.k == k
-    classifier.train(v.tf_idf_table[:5], v.doc_col.author_list)
-    scores = classifier.classify(np.zeros((3, v.tf_idf_table.shape[1])))
-    pp(scores)
+
+    # pp(v.doc_col.vocab[:10])
+    query = ['Senators', 'Tuesday']
+    scores = classifier.classify_query(query)
+    pp('scores nonzeros:')
+    pp(scores[scores != 0])
 
 def test_cosine():
     index = 0
@@ -28,6 +33,10 @@ def test_cosine():
     b = np.array([1, 2])
     score = knn.simscore_cosine(a, b)
     assert score == .8
+    a = np.array([0, 1, 0, 1, 1])
+    b = np.array([1, 1, 1, 0, 0])
+    score = knn.simscore_cosine(a, b)
+    assert score == .3333
 
 def test_okapi():
     index = 0

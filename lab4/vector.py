@@ -24,16 +24,18 @@ class VectorCollection:
 
     def __init__(self, doc_col):
         self.doc_col = doc_col
+        self.tf_table = None
+        self.idf_table = None
         self.tf_idf_table = None
 
     def __repr__(self):
         return 'TODO repr'
 
     def compute_TF_IDF(self):
-        tf_table = compute_TF(self.doc_col.doc_list, self.doc_col.vocab)
-        idf_table = compute_IDF(self.doc_col.doc_list, self.doc_col.vocab)
-        self.tf_idf_table = compute_TF_IDF(tf_table, idf_table)
-        return self.tf_idf_table
+        self.tf_table = compute_TF(self.doc_col.doc_list, self.doc_col.vocab)
+        self.idf_table = compute_IDF(self.doc_col.doc_list, self.doc_col.vocab)
+        self.tf_idf_table = compute_TF_IDF(self.tf_table, self.idf_table)
+        return self.tf_idf_table    
 
     def load(self, filename):
         self.tf_idf_table = np.load(filename)
@@ -49,12 +51,22 @@ class VectorCollection:
         self.doc_col.load(in_dir)
         self.tf_idf_table = np.load(utils.get_vector_cache_name(in_dir))
 
-def compute_TF_IDF(tf_table, idf_table):
-    tf_idf_table = np.zeros(shape=tf_table.shape)
-    for i, doc in enumerate(tf_table):
-        for j, term in enumerate(doc):
-            tf_idf_table[i][j] = term * idf_table[j]
+    def flip_all(self):
+        self.doc_col.doc_list = self.doc_col.doc_list.T
+        self.doc_col.vocab = self.doc_col.vocab.T
+        self.doc_col.author_list = self.doc_col.author_list.T
+        self.tf_table = self.tf_table.T
+        self.idf_table = self.idf_table.T
+        self.tf_idf_table = self.tf_idf_table.T
+
+def real_compute_tfidf(doc_list, vocab):
+    tf_table = compute_TF(doc_list, vocab)
+    idf_table = compute_IDF(doc_list, vocab)
+    tf_idf_table = compute_TF_IDF(tf_table, idf_table)
     return tf_idf_table
+
+def compute_TF_IDF(tf_table, idf_table):
+    return tf_table * idf_table
 
 def compute_TF_normalized(doc_list, vocab):
     tf_table = compute_TF(doc_list, vocab)
@@ -68,7 +80,9 @@ def compute_TF(doc_list, vocab):
     tf_table = np.zeros(shape=(rows, cols))
     for i, doc in enumerate(doc_list):
         for j, term in enumerate(vocab):
-            tf_table[i][j] = _get_term_count(term, doc)
+            count = _get_term_count(term, doc)
+            # print('count: %s' % count)
+            tf_table[i][j] = count
     return tf_table
 
 def _get_term_count(term, doc):
@@ -79,22 +93,23 @@ def _normalize(x, max):
 
 def compute_IDF(doc_list, vocab):
     # might need to initialize this
-    doc_counts = []
-    for word in vocab:
-        doc_counts.append(_get_doc_count(word, doc_list))
-    
-    # part of formula
-    idf_table = []
-    for count in doc_counts:
-        idf_table.append(_calc_idf(count, doc_list))
-    return np.array(idf_table)
+    dfs = get_doc_freq(doc_list, vocab)
+    print('dfs: %s' % dfs)
+    temp = np.reciprocal(dfs)
+    temp[temp == np.inf] = 0
+    idf = np.log(temp * len(doc_list))
+    idf[idf == np.inf] = 0
+    print(idf)
+    return idf
 
-def _get_doc_count(word, doc_list):
-    c = 0
-    for doc in doc_list:
-        if word in doc: c += 1
-    return c
+def get_doc_freq(doc_list, vocab):
+    df = np.zeros(len(vocab))
+    for i, doc in enumerate(doc_list):
+        for j, word in enumerate(vocab):
+            if word in doc: df[j] += 1
+    return df
 
 def _calc_idf(count, doc_list):
+    if count == 0: return 0
     return math.log(float(len(doc_list) / count))
 
