@@ -15,8 +15,8 @@ python3 textVectorizer.py <output_dir> <files>*
 
 python3 knnAuthorship.py <input_dir> <k>
 
-##clusterAuthorship
-python3 clusterAuthorship.py <vector.npy>
+##clusteringAuthorship
+python3 clusteringAuthorship.py <vector.npy>
 
-##clusterEvaluation
-python3 clusterEvaluation.py <vector.npy>
+##clusteringEvaluation
+python3 clusteringEvaluation.py <vector.npy>
