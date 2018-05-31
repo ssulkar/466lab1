@@ -25,7 +25,6 @@ def main():
     # y = np.random.rand((20))
     # fig = plt.figure()
     # plt.scatter(x, y)
-
     # fig.savefig('test.png')
 
     all_files = os.listdir('./datasets')
@@ -37,16 +36,7 @@ def main():
            # ['AL', '0', 'TN', '0'],
            # ['AZ', '0', 'CA', '0']], dtype='<U2')
 
-    # state = data[0][0]
-    # node = Node([], state)
-    # for neighbor in data[data[:,0] == state]:
-    #     node.neighbors.append(Node([node], neighbor[2]))
-    # pp(node.str_neighbors())
-
-    adj_list = get_adjacency_list(data)
-    pp(len(adj_list))
-    adj_matrix = convert_to_adjacency_matrix(adj_list)
-    pp(adj_matrix[:5, :5])
+    adj_matrix, ordering = get_adj_matrix(data)
 
 def get_data(filename):
     lines = []
@@ -55,16 +45,21 @@ def get_data(filename):
         lines = [list(map(lambda x: x.strip(), r)) for r in reader]
     return np.array(lines)
 
-def convert_to_adjacency_matrix(adj_list):
-    labels = sorted(adj_list)
+def get_adj_matrix(data):
+    adj_list = _get_adj_list(data)
+    ordering = sorted(adj_list)
+    adj_matrix = _matrix_from_list(adj_list, ordering)
+    return adj_matrix, ordering
+
+def _matrix_from_list(adj_list, ordering):
     n = len(adj_list)
     matrix = np.zeros((n, n))
-    for i, key in enumerate(sorted(adj_list)):
+    for i, key in enumerate(ordering):
         for value in adj_list[key]:
-            matrix[i, labels.index(value)] = 1
+            matrix[i, ordering.index(value)] = 1
     return matrix
 
-def get_adjacency_list(data):
+def _get_adj_list(data):
     adj_list = {}
     for row in data:
         col_1 = row[0]
