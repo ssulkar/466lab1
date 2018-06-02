@@ -1,4 +1,4 @@
-#Lab 4
+#Lab 5
 
 Authors: Devon Martin, Shiv Sulkar
 Emails:
@@ -7,16 +7,6 @@ Emails:
 
 #Usage
 
-##Text Vectorization
+##Page Rank
 
-python3 textVectorizer.py <output_dir> <files>*
-
-##K-NN
-
-python3 knnAuthorship.py <input_dir> <k>
-
-##clusteringAuthorship
-python3 clusteringAuthorship.py <vector.npy>
-
-##clusteringEvaluation
-python3 clusteringEvaluation.py <vector.npy>
+python3 pageRank.py <input_file>
