@@ -24,22 +24,27 @@ def main():
 
     adj_matrix, ordering = get_adj_matrix(data)
 
-    data_read_time = time.time()
+    read_time = time.time()
 
     d = .85
-    pr_arr = calc_PR(adj_matrix, d)
-
-    pp('read time: %s' % (data_read_time - start_time))
-    pp('calc time: %s' % (calc_time - data_read_time))
+    pr_arr, iter_count = calc_PR(adj_matrix, d)
 
     sort_order = pr_arr.argsort()[::-1]
 
     ordering = ordering[sort_order]
     pr_arr = pr_arr[sort_order]
-    for i, pr in enumerate(pr_arr):
-        pp('%s: %s' % (ordering[i], pr_arr[i]))
-    
+
     calc_time = time.time()
+    
+    read_dur = read_time - start_time
+    calc_dur = calc_time - read_time
+    rounding = 4
+    pp('read_dur: %s' % round(read_dur, rounding))
+    pp('calc_dur: %s' % round(calc_dur, rounding))
+    pp('iter_count: %s' % iter_count)
+
+    for i, pr in enumerate(pr_arr):
+        pp('rank: %s, page: %s, value: %s' % (i, ordering[i], round(pr_arr[i], rounding)))
 
 # ------------------------------------------------------------------------------
 def get_data(filename):
@@ -89,8 +94,7 @@ def calc_PR(adj_matrix, d):
         for page_index in range(len(pr_arr)):
             temp[page_index] = _single_pr(page_index, pr_arr, adj_matrix, d)
         pr_arr = temp
-    pp('iter_count: %s' % iter_count)
-    return pr_arr
+    return pr_arr, iter_count
 
 
 def _single_pr(page_index, pr_arr, adj_matrix, d):
@@ -148,14 +152,16 @@ def calc_PR_alternate(G, ep):
     # pp(G)
     # pp(d)
     # pp(M)
+    iter_count = 0
     while True:
+        iter_count += 1
         r1 = np.dot(M, r0)
         dist = _distance(r1, r0)
         if dist < ep:
             break
         else:
             r0 = r1
-    return r1
+    return r1, iter_count
 
 def _distance(v1, v2):
     v = v1 - v2
