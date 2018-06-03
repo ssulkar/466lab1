@@ -1,10 +1,10 @@
-amazon0505.txt, 47532684, 10.7297, 238.6567
-dolphins.csv, 6500, 10.7297, 238.6567
-karate.csv, 1438, 10.7297, 238.6567
-lesmis.csv, 13560, 10.7297, 238.6567
-NCAA_football.csv, 57241, 10.7297, 238.6567
-p2p-Gnutella05.txt, 337597, 10.7297, 238.6567
-soc-LiveJournal1.txt, 1080598042, 10.7297, 238.6567
-soc-sign-Slashdot081106.txt, 6640838, 10.7297, 238.6567
-stateborders.csv, 2996, 10.7297, 238.6567
-wiki-Vote.txt, 1095061, 10.7297, 238.6567
+soc-LiveJournal1.txt, 1080598042, 0, 0, 0
+amazon0505.txt, 47532684, 0, 0, 0
+soc-sign-Slashdot081106.txt, 6640838, 0, 0, 0
+wiki-Vote.txt, 1095061, 15.2649, 129.176, 49
+p2p-Gnutella05.txt, 337597, 5.8792, 105.4958, 47
+NCAA_football.csv, 57241, 0.0362, 0.5436, 38
+lesmis.csv, 13560, 0.0054, 0.0405, 32
+dolphins.csv, 6500, 0.0019, 0.0308, 31
+stateborders.csv, 2996, 0.0015, 0.0255, 30
+karate.csv, 1438, 0.0034, 0.0334, 29

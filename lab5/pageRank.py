@@ -26,6 +26,11 @@ def main():
 
     read_time = time.time()
 
+    rounding = 4
+
+    read_dur = read_time - start_time
+    print('read_dur: %s' % round(read_dur, rounding))
+
     d = .85
     ep = .0001
     pr_arr, iter_count = calc_PR(adj_matrix, d, ep)
@@ -36,15 +41,11 @@ def main():
     pr_arr = pr_arr[sort_order]
 
     calc_time = time.time()
-    
-    read_dur = read_time - start_time
     calc_dur = calc_time - read_time
-    rounding = 4
-    print('read_dur: %s' % round(read_dur, rounding))
     print('calc_dur: %s' % round(calc_dur, rounding))
     print('iter_count: %s' % iter_count)
-
-    ranks = np.arange(len(pr_arr))[::-1]
+    
+    ranks = np.arange(len(pr_arr))
     for i, pr in enumerate(pr_arr):
         print('rank: %s, page: %s, value: %s' % (ranks[i], ordering[i], round(pr_arr[i], rounding)))
 
@@ -83,7 +84,7 @@ def get_adj_matrix(data):
 
 def _matrix_from_list(adj_list, ordering):
     n = len(adj_list)
-    matrix = np.zeros((n, n))
+    matrix = np.zeros((n, n), dtype=np.uint8)
     for i, key in enumerate(ordering):
         for value in adj_list[key]:
             matrix[i, ordering.index(value)] = 1
@@ -107,17 +108,18 @@ def _get_adj_list(data):
 # ------------------------------------------------------------------------------
 def calc_PR(adj_matrix, d, ep):
     MAX_ITERATIONS = 50
-    pr_arr = np.ones(len(adj_matrix)) / len(adj_matrix)
+    pr_arr = np.ones(len(adj_matrix), dtype=np.float32) / len(adj_matrix)
     i = 0
+    temp = np.zeros(len(adj_matrix), dtype=np.float32)
     while i < MAX_ITERATIONS:
-        temp = np.zeros(len(adj_matrix))
+        temp[:] = 0
         for page_index in range(len(pr_arr)):
             temp[page_index] = _single_pr(page_index, pr_arr, adj_matrix, d)
 
         dist = _distance(temp, pr_arr)
         if dist < ep:
             break
-        pr_arr = temp
+        pr_arr = temp.copy()
         i += 1
     return pr_arr, i
 
