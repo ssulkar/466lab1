@@ -27,7 +27,8 @@ def main():
     read_time = time.time()
 
     d = .85
-    pr_arr, iter_count = calc_PR(adj_matrix, d)
+    ep = .0001
+    pr_arr, iter_count = calc_PR(adj_matrix, d, ep)
 
     sort_order = pr_arr.argsort()[::-1]
 
@@ -39,19 +40,38 @@ def main():
     read_dur = read_time - start_time
     calc_dur = calc_time - read_time
     rounding = 4
-    pp('read_dur: %s' % round(read_dur, rounding))
-    pp('calc_dur: %s' % round(calc_dur, rounding))
-    pp('iter_count: %s' % iter_count)
+    print('read_dur: %s' % round(read_dur, rounding))
+    print('calc_dur: %s' % round(calc_dur, rounding))
+    print('iter_count: %s' % iter_count)
 
+    ranks = np.arange(len(pr_arr))[::-1]
     for i, pr in enumerate(pr_arr):
-        pp('rank: %s, page: %s, value: %s' % (i, ordering[i], round(pr_arr[i], rounding)))
+        print('rank: %s, page: %s, value: %s' % (ranks[i], ordering[i], round(pr_arr[i], rounding)))
 
 # ------------------------------------------------------------------------------
 def get_data(filename):
     lines = []
     with open(filename, 'r') as f:
-        reader = csv.reader(f)
-        lines = [list(map(lambda x: x.strip(), r)) for r in reader]
+        line = '#'
+        while '#' in line:
+            line = f.readline()
+
+        delimiter = ','
+        if '.txt' in filename:
+            delimiter = '\t'
+
+        # reader = csv.reader(f, delimiter=delimiter)
+        # lines = [list(map(lambda x: x.strip(), r)) for r in reader]
+        lines = []
+        for r in f.readlines():
+            raw = r.split(delimiter)
+            if delimiter == ',': 
+                raw = [raw[0], raw[2]]
+            elif delimiter == '\t': 
+                raw = [raw[0], raw[1]]
+            line = list(map(lambda x: x.strip('"').strip(), raw))
+            lines.append(line)
+        # lines = [line] + lines
     return np.array(lines)
 
 # ------------------------------------------------------------------------------
@@ -70,10 +90,11 @@ def _matrix_from_list(adj_list, ordering):
     return matrix
 
 def _get_adj_list(data):
+    # this might need to change for text type files
     adj_list = {}
     for row in data:
-        col_1 = row[0]
-        col_2 = row[2]
+        col_1 = row[0]  # hardcoded
+        col_2 = row[1]  # hardcoded
         l = adj_list.get(col_1, [])
         if col_2 not in l:
             adj_list[col_1] = l + [col_2]
@@ -84,17 +105,21 @@ def _get_adj_list(data):
     return adj_list
 
 # ------------------------------------------------------------------------------
-def calc_PR(adj_matrix, d):
+def calc_PR(adj_matrix, d, ep):
     MAX_ITERATIONS = 50
-    iter_count = 0
     pr_arr = np.ones(len(adj_matrix)) / len(adj_matrix)
-    for i in range(MAX_ITERATIONS):
-        iter_count += 1
+    i = 0
+    while i < MAX_ITERATIONS:
         temp = np.zeros(len(adj_matrix))
         for page_index in range(len(pr_arr)):
             temp[page_index] = _single_pr(page_index, pr_arr, adj_matrix, d)
+
+        dist = _distance(temp, pr_arr)
+        if dist < ep:
+            break
         pr_arr = temp
-    return pr_arr, iter_count
+        i += 1
+    return pr_arr, i
 
 
 def _single_pr(page_index, pr_arr, adj_matrix, d):
