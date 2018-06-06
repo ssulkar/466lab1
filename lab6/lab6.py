@@ -81,10 +81,10 @@ def weighted_sum(users, items, user_id, item_id):
     user = users[user_id]
     avg_user_rating = user["avg_user_rating"]
     
-    for other_stat in users:
-        rating = other_stat["user_ratings_list"][item_id]
-        if other_stat["user_id"] != user_id and rating != 99.0:
-            sim = cosine(user["user_ratings_list"], other_stat["user_ratings_list"])
+    for other_user in users:
+        rating = other_user["user_ratings_list"][item_id]
+        if other_user["user_id"] != user_id and rating != 99.0:
+            sim = cosine(user["user_ratings_list"], other_user["user_ratings_list"])
             print(sim)
     
 def cosine(vec1, vec2):
