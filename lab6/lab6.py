@@ -1,6 +1,7 @@
 import sys
 import csv
 import numpy
+import random
 
 
 def main():
@@ -9,8 +10,6 @@ def main():
     data_list = list(reader)
     
     matrix = numpy.array(data_list).astype("float")
-    #user_stats = {}
-    #content_stats = {}
     
     user_stats = []
     
@@ -39,11 +38,32 @@ def main():
         item["avg_item_rating"] = item["avg_item_rating"]/item["total_item_ratings"]
 
     
-    print(item_stats)
-    print()
+    #print(item_stats)
+    #print()
     print(user_stats)
+    create_test(user_stats, 1)
     
+    
+    
+def create_test(user_stats, test_size):
+    test_list = []
+    for i in range(test_size):
+        user_id = random.randint(0, len(user_stats)-1)
+        user_stat = user_stats[user_id]
+        
+        rating_list = user_stat["user_ratings_list"]
+        item_id = random.randint(0, len(rating_list)-1)
+        rating = rating_list[item_id]
+        while (rating == 99.0):
+            user_id = random.randint(0, len(user_stats)-1)
+            user_stat = user_stats[user_id]
+        
+            rating_list = user_stat["user_ratings_list"]
+            item_id = random.randint(0, len(rating_list)-1)
+            rating = rating_list[item_id]
+        test_list.append([user_id, item_id])
+    return test_list
 
-    
+            
 if __name__ == '__main__':
     main()
