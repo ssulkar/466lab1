@@ -2,9 +2,8 @@ import math
 import random
 import numpy
 
-def create_predictions(test_list, users, method):
+def create_predictions(test_list, users, method, MAEs):
     if (method == "cosine_adjusted"):
-        print("method: " + method)
         expected_list = []
         actual_list = []
         for i in range(len(test_list)):
@@ -12,9 +11,9 @@ def create_predictions(test_list, users, method):
             item_id = test_list[i][1]
             expected_list.append(get_item_rating(users, user_id, item_id))
             actual_list.append(cosine_similarity_adjusted(users, user_id, item_id))
-        print_result(test_list, expected_list, actual_list)
+        MAEs.append(print_result(test_list, expected_list, actual_list))
+        
     elif (method == "cosine"):
-        print("method: " + method)
         expected_list = []
         actual_list = []
         for i in range(len(test_list)):
@@ -22,9 +21,8 @@ def create_predictions(test_list, users, method):
             item_id = test_list[i][1]
             expected_list.append(get_item_rating(users, user_id, item_id))
             actual_list.append(cosine_similarity(users, user_id, item_id))
-        print_result(test_list, expected_list, actual_list)
+        MAEs.append(print_result(test_list, expected_list, actual_list))
     elif (method == "default_voting"):
-        print("method: " + method)
         expected_list = []
         actual_list = []
         for i in range(len(test_list)):
@@ -32,7 +30,7 @@ def create_predictions(test_list, users, method):
             item_id = test_list[i][1]
             expected_list.append(get_item_rating(users, user_id, item_id))
             actual_list.append(default_voting(users, user_id, item_id))
-        print_result(test_list, expected_list, actual_list)
+        MAEs.append(print_result(test_list, expected_list, actual_list))
     else:
         print("Method does not exist! Available methods: cosine, cosine_adjusted, default_voting")    
     
@@ -51,8 +49,11 @@ def print_result(test_list, expected_list, actual_list):
         line = [user_id, item_id, str(expected), str(actual), str(delta)]
         print("{:<18} {:<18} {:<18} {:<18} {:<18}".format(*line))
         mu += abs(delta)
-    print("MAE: " + str(mu/len(test_list)))
-    print()    
+        
+    MAE = mu/len(test_list)
+    print("MAE: " + str(MAE))
+    print()
+    return MAE  
     
 def create_test(users, test_size):
     test_list = []

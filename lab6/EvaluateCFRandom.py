@@ -44,10 +44,15 @@ def main():
     #calculate average item rating
     for item in items:
         item["avg_item_rating"] = item["avg_item_rating"]/item["total_item_ratings"]
-        
+      
+    MAEs = []  
+    print("method: " + method)
     for i in range(repeat):
+        print("trial #" + str(i+1))
         test_list = Techniques.create_test(users, test_size)
-        Techniques.create_predictions(test_list, users, method)
+        Techniques.create_predictions(test_list, users, method, MAEs)
+    print("MAE Average: " + str(numpy.average(MAEs)))
+    print("MAE Standard Deviation: " + str(numpy.std(MAEs, ddof=1)))
 
 if __name__ == '__main__':
     main()

@@ -56,8 +56,13 @@ def main():
         if(rating == 99.0):
             print("Rating at user id " + str(uid) +" and item id " + str(iid) + " is 99. Fix your test.")
             return 0
+            
+    MAEs = []        
+    print("method: " + method)
     for i in range(repeat):
-        Techniques.create_predictions(test_list, users, method)
-        
+        print("trial #" + str(i+1))
+        Techniques.create_predictions(test_list, users, method, MAEs)
+    print("MAE Average: " + str(numpy.average(MAEs)))
+    print("MAE Standard Deviation: " + str(numpy.std(MAEs, ddof=1)))
 if __name__ == '__main__':
     main()
