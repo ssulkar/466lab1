@@ -1,57 +1,58 @@
-import sys
-import csv
-import numpy
 import math
 import random
+import numpy
 
-#IMPORTANT: user_ids and item_ids both start at id 0
-
-def main():
-    filename = sys.argv[1]
-    reader = csv.reader(open(filename, "r"), delimiter=",")
-    data_list = list(reader)
+def create_predictions(test_list, users, method):
+    if (method == "cosine_adjusted"):
+        print("method: " + method)
+        expected_list = []
+        actual_list = []
+        for i in range(len(test_list)):
+            user_id = test_list[i][0]
+            item_id = test_list[i][1]
+            expected_list.append(get_item_rating(users, user_id, item_id))
+            actual_list.append(cosine_similarity_adjusted(users, user_id, item_id))
+        print_result(test_list, expected_list, actual_list)
+    elif (method == "cosine"):
+        print("method: " + method)
+        expected_list = []
+        actual_list = []
+        for i in range(len(test_list)):
+            user_id = test_list[i][0]
+            item_id = test_list[i][1]
+            expected_list.append(get_item_rating(users, user_id, item_id))
+            actual_list.append(cosine_similarity(users, user_id, item_id))
+        print_result(test_list, expected_list, actual_list)
+    elif (method == "default_voting"):
+        print("method: " + method)
+        expected_list = []
+        actual_list = []
+        for i in range(len(test_list)):
+            user_id = test_list[i][0]
+            item_id = test_list[i][1]
+            expected_list.append(get_item_rating(users, user_id, item_id))
+            actual_list.append(default_voting(users, user_id, item_id))
+        print_result(test_list, expected_list, actual_list)
+    else:
+        print("Method does not exist! Available methods: cosine, cosine_adjusted, default_voting")    
     
-    matrix = numpy.array(data_list).astype("float")
     
-    users = []
+def print_result(test_list, expected_list, actual_list):
+    headers = ["userID", "itemID", "Actual_Rating", "Predicted_Rating", "Delta_Rating"]
     
-    #initializes dictionaries for all 100 items
-    #notice it ignores the first index, that is the user's total rating count
-    items = [{"item_id": i, "avg_item_rating": 0, "total_item_ratings": 0} for i in range(len(matrix[0][1:]))]
-    
-    
-    for i, row in enumerate(matrix):
-        individual_user = {"user_id": i, "avg_user_rating": 0, "user_ratings_list": row[1:], "total_user_ratings": row[0]}
-        
-        for j, rating in enumerate(row[1:]):
-            if(rating != 99.0):
-                #for now we will use avg_user_rating to store the sum
-                individual_user["avg_user_rating"] += rating
-                #for now we will use avg_item_rating to store the sum
-                items[j]["avg_item_rating"] += rating
-                #this count will later come in handy to calculate the average
-                items[j]["total_item_ratings"] += 1
-        if(individual_user["total_user_ratings"] != 0):
-             individual_user["avg_user_rating"] = individual_user["avg_user_rating"]/individual_user["total_user_ratings"]
-        users.append(individual_user)
-    
-    #calculate average item rating
-    for item in items:
-        item["avg_item_rating"] = item["avg_item_rating"]/item["total_item_ratings"]
-
-    
-    #print(items)
-    #print()
-    #print(users)
-    test_list = create_test(users, 1)
-    print(test_list) 
-    user_id = test_list[0][0]
-    item_id = test_list[0][1]
-    actual = get_item_rating(users, user_id, item_id)
-    
-    print(actual)
-    cosine_similarity_adjusted(users, items, user_id, item_id)
-    
+    mu = 0
+    print("{:<18} {:<18} {:<18} {:<18} {:<18}".format(*headers))
+    for i in range(len(test_list)):
+        user_id = str(test_list[i][0]) 
+        item_id = str(test_list[i][1])
+        expected = (expected_list[i])
+        actual = (actual_list[i]) 
+        delta = actual - expected
+        line = [user_id, item_id, str(expected), str(actual), str(delta)]
+        print("{:<18} {:<18} {:<18} {:<18} {:<18}".format(*line))
+        mu += abs(delta)
+    print("MAE: " + str(mu/len(test_list)))
+    print()    
     
 def create_test(users, test_size):
     test_list = []
@@ -78,26 +79,7 @@ def get_item_rating(users, user_id, item_id):
     rating = rating_list[item_id]
     return rating
 
-def weighted_sum(users, items, user_id, item_id):
-    numer = 0 
-    denom = 0
-    user = users[user_id]
-    avg_user_rating = user["avg_user_rating"]
-    
-    for other_user in users:
-        rating = other_user["user_ratings_list"][item_id]
-        #make sure the user isn't the same and also that their rating isn't null (99)
-        if other_user["user_id"] != user_id and rating != 99.0:
-            
-            sim = cosine(user["user_ratings_list"], other_user["user_ratings_list"])
-            #sim = pearson(user["user_ratings_list"], other_user["user_ratings_list"])
-            
-            denom += abs(sim)
-            numer += sim * (rating - avg_user_rating)
-    print(numer/denom)
-    return numer/denom
-    
-def default_voting(users, items, user_id, item_id):
+def default_voting(users, user_id, item_id):
     numer = 0 
     denom = 0
     user = users[user_id]
@@ -135,15 +117,13 @@ def default_voting(users, items, user_id, item_id):
     
             denom += abs(sim)
             numer += sim * (rating - avg_user_rating)
-    print(numer/denom)
     return numer/denom    
     
-def cosine_similarity_adjusted(users, items, user_id, item_id):
+def cosine_similarity_adjusted(users, user_id, item_id):
     numer = 0 
     denom = 0
     user = users[user_id]
     avg_user_rating = user["avg_user_rating"]
-    outsim = 0
     
     for other_user in users:
         rating = other_user["user_ratings_list"][item_id]
@@ -158,10 +138,10 @@ def cosine_similarity_adjusted(users, items, user_id, item_id):
                 sim = numerator/denominator
             denom += abs(sim)
             numer += sim * (rating - avg_user_rating)
-    print(numer/denom)
+    
     return numer/denom
     
-def cosine_similarity(users, items, user_id, item_id):
+def cosine_similarity(users, user_id, item_id):
     numer = 0 
     denom = 0
     user = users[user_id]
@@ -180,8 +160,4 @@ def cosine_similarity(users, items, user_id, item_id):
             denom += abs(sim)
             numer += sim * rating
             
-    print(numer/denom)
     return numer/denom
-  
-if __name__ == '__main__':
-    main()

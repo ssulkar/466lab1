@@ -7,6 +7,16 @@ Emails:
 
 #Usage
 
-##Page Rank
+##EvaluateCFRandom.py
+python3 EvaluateCFRandom.py <jesterfile> <method> <test_size> <repeat>
 
-python3 pageRank.py <input_file>
+EXAMPLE:
+python3 EvaluateCFRandom.py data/jester-data-1.csv cosine_adjusted 3 3
+
+
+##EvaluateCFList.py
+python3 EvaluateCFList.py <jesterfile> <method> <testfile>
+
+EXAMPLE:
+python3 EvaluateCFList.py data/jester-data-1.csv cosine_adjusted tests/test01.csv
+
