@@ -1,0 +1,12 @@
+method: cosine
+trial #1
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+1                  50                 3.16               0.458939960017     -2.70106003998    
+75                 34                 0.0                2.87564142209      2.87564142209     
+100                9                  -7.91              1.3280195333       9.2380195333      
+25                 20                 8.25               2.14121850087      -6.10878149913    
+1010               33                 -3.2               0.923220874268     4.12322087427     
+MAE: 5.00934467375
+
+MAE Average requires more than one MAE
+MAE Standard Deviation requires more than one MAE.

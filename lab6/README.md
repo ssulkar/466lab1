@@ -20,3 +20,5 @@ python3 EvaluateCFList.py <jesterfile> <method> <testfile>
 EXAMPLE:
 python3 EvaluateCFList.py data/jester-data-1.csv cosine_adjusted tests/test01.csv
 
+
+# METHODS SUPPORTED: default_voting, cosine, cosine_adjusted

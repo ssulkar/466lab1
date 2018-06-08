@@ -1,0 +1,24 @@
+method: cosine_adjusted
+trial #1
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+8729               3                  0.1                -1.37492684748     -1.47492684748    
+11979              77                 4.37               1.68140753448      -2.68859246552    
+8589               48                 -8.64              3.54454743886      12.1845474389     
+MAE: 5.44935558395
+
+trial #2
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+8004               16                 -8.69              -4.28206362907     4.40793637093     
+12378              61                 7.28               -1.10355078334     -8.38355078334    
+8837               92                 3.4                2.3775571505       -1.0224428495     
+MAE: 4.60464333459
+
+trial #3
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+9757               60                 -0.78              -0.74559642355     0.0344035764501   
+3634               14                 5.49               1.10997727377      -4.38002272623    
+22457              25                 -0.63              2.48988676274      3.11988676274     
+MAE: 2.51143768847
+
+MAE Average: 4.188478869
+MAE Standard Deviation: 1.51252604505

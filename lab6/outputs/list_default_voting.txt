@@ -1,0 +1,12 @@
+method: default_voting
+trial #1
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+1                  50                 3.16               -0.794211597838    -3.95421159784    
+75                 34                 0.0                -0.230018064675    -0.230018064675   
+100                9                  -7.91              -3.54079080957     4.36920919043     
+25                 20                 8.25               -3.59694826468     -11.8469482647    
+1010               33                 -3.2               -0.045821663042    3.15417833696     
+MAE: 4.71091309092
+
+MAE Average requires more than one MAE
+MAE Standard Deviation requires more than one MAE.

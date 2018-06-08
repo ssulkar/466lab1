@@ -1,0 +1,24 @@
+method: default_voting
+trial #1
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+17926              58                 -2.91              -0.735596848471    2.17440315153     
+1140               50                 -8.06              -2.02758717205     6.03241282795     
+12734              34                 1.21               0.215760991936     -0.994239008064   
+MAE: 3.06701832918
+
+trial #2
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+11595              36                 -2.77              -3.96094004969     -1.19094004969    
+3071               26                 0.87               -3.47207472704     -4.34207472704    
+12391              5                  0.24               0.889248810955     0.649248810955    
+MAE: 2.06075452923
+
+trial #3
+userID             itemID             Actual_Rating      Predicted_Rating   Delta_Rating      
+12154              72                 8.25               -2.99931952729     -11.2493195273    
+850                39                 -3.79              -1.74754579992     2.04245420008     
+8645               22                 1.94               -1.33192331862     -3.27192331862    
+MAE: 5.52123234866
+
+MAE Average: 3.54966840236
+MAE Standard Deviation: 1.7800112372
