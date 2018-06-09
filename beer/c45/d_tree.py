@@ -16,13 +16,12 @@ class Node:
         self.edges = []
         # self.end
 
-# TODO need to add correct value for num
 class Edge:
     """ Edges have a label and a node they are connected to """
-    def __init__(self, label, node):
+    def __init__(self, label, node, num):
         self.label = label
         self.node = node
-        # self.num
+        self.num = num
 
 # returns to tree as a dictionary that can be written to json file
 def toJSON(T):
@@ -35,7 +34,8 @@ def _toJSON(T):
     if hasattr(T, 'label'):
         return {
             "label": T.label,
-            "node": _toJSON(T.node)
+            "node": _toJSON(T.node),
+            "num": T.num
         }
     else:
         return {
@@ -54,7 +54,7 @@ def toXML(T):
 # TODO need to add correct value for end
 def _toXML(T):
     if hasattr(T, 'label'):
-        return '<edge var = "{0}" num = "null">{1}</edge>'.format(T.label, _toXML(T.node))
+        return '<edge var = "{0}" num = "{2}">{1}</edge>'.format(T.label, _toXML(T.node), T.num)
     elif len(T.edges) == 0:
         return '<decision end="null" choice="{0}"/>'.format(T.value)
     else:
