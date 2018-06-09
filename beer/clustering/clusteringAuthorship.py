@@ -10,8 +10,19 @@ def main(args):
     if (len(args) < 2 or len(args) > 3):
         print("Usage: python3 hclustering <Filename> [<threshold>]")
     else:
-        data = np.load(args[1])
+        #data = np.load(args[1])
         #data = [[1, 0], [3, 0], [6, 0]]
+        filename = args[1]
+        
+        
+        data = []
+        
+        with open(filename, 'r') as f:
+            reader = csv.reader(f)
+            header = next(reader)
+            data = [[float(data) for i, data in enumerate(r) if header[i] != '0'] for r in reader if len(r) > 0]
+
+        
         
         C = agglomerative(data, 1)
         newFileName = args[1]+".xml"
@@ -63,8 +74,8 @@ def agglomerative(D, csize):
     for j in range(len(C)):
         for k in range(j+1, len(C)):
             distanceMatrix[j][k] = distanceFormula(C[j], C[k])
-    print(len(C)) 
-    while len(C) > csize:#> 1:
+    while len(C) > csize:
+        print(len(C))
         # indexes of two closest clusters
         s, r, height = argMin(distanceMatrix)
         # recalculate distance matrix
