@@ -3,6 +3,9 @@ import sys
 import csv
 import numpy
 
+
+
+
 #ID assignment starts at 0
 
 def main():
@@ -56,7 +59,7 @@ def main():
         print("MAE Standard Deviation: " + str(numpy.std(MAEs, ddof=1)))
     else:
         print("MAE Average requires more than one MAE")
-        print("MAE Standard Deviation requires more than one MAE.")
+        print("MAE Standard Deviation requires more than one MAE.")     
 
 if __name__ == '__main__':
     main()
