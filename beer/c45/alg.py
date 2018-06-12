@@ -163,6 +163,9 @@ def findBestSplit(a, D):
         counts[c] = {}
 
     for d in D:
+        if d[a] == 'N/A':
+            continue
+
         for c in classes:
             if d[a] not in counts[c]:
                 counts[c][d[a]] = 0
@@ -176,8 +179,8 @@ def findBestSplit(a, D):
     return max(gain, key=gain.get)
 
 def entropyC(D, A, threshold, counts):
-    valuesBelow = set([x[A] for x in D if x[A] <= threshold])
-    valuesAbove = set([x[A] for x in D if x[A] > threshold])
+    valuesBelow = set([x[A] for x in D if x[A] != 'N/A' and x[A] <= threshold])
+    valuesAbove = set([x[A] for x in D if x[A] != 'N/A' and x[A] > threshold])
 
     totalsBelow = {}
     totalsAbove = {}
