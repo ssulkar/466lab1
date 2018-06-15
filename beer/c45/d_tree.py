@@ -11,10 +11,10 @@ class Node:
     Tree nodes have an attribute and an edge for each  value of that attribute
     Leaf node have a classification and 0 edges leading out 
     """
-    def __init__(self, value):
+    def __init__(self, value, end=''):
         self.value = value
         self.edges = []
-        # self.end
+        self.end = end
 
 class Edge:
     """ Edges have a label and a node they are connected to """
@@ -56,6 +56,6 @@ def _toXML(T):
     if hasattr(T, 'label'):
         return '<edge var = "{0}" num = "{2}">{1}</edge>'.format(T.label, _toXML(T.node), T.num)
     elif len(T.edges) == 0:
-        return '<decision end="null" choice="{0}"/>'.format(T.value)
+        return '<decision end="{1}" choice="{0}"/>'.format(T.value, T.end)
     else:
         return '<node var="{0}">{1}</node>'.format(T.value, ''.join([_toXML(e) for e in T.edges]))

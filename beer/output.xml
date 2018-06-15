@@ -1,0 +1,24 @@
+<Tree name="test">
+    <node var="ounces">
+        <edge num="12" var="Greater">
+            <node var="abv">
+                <edge num="0.05" var="Greater">
+                    <node var="ibu">
+                        <edge num="61" var="Greater">
+                            <decision choice="American IPA" end="145" />
+                        </edge>
+                        <edge num="61" var="Less">
+                            <decision choice="American Pale Ale (APA)" end="241" />
+                        </edge>
+                    </node>
+                </edge>
+                <edge num="0.05" var="Less">
+                    <decision choice="American Pale Wheat Ale" end="112" />
+                </edge>
+            </node>
+        </edge>
+        <edge num="12" var="Less">
+            <decision choice="American IPA" end="904" />
+        </edge>
+    </node>
+</Tree>

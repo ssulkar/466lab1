@@ -6,8 +6,8 @@ def parseCSV(fileName, headerFlag):
         csvReader = csv.reader(csvDataFile)
         if headerFlag:
             labels = next(csvReader)[1:]
-            next(csvReader)
-            next(csvReader)
+            # next(csvReader)
+            # next(csvReader)
             dataStruct = [createDict(x[1:], labels) for x in csvReader if len(x[1:]) == len(labels)]
         else:
             labels = ["sepal length in cm", "sepal width in cm", "petal length in cm", "petal width in cm", "class"]

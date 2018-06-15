@@ -15,19 +15,19 @@ def c45(D, A, T, threshold):
 
     # TODO these can be in the same if statement
     if homogenous:
-        n = d_tree.Node(dominant)
-        logger.info('homogenous (%d) -> created node: %s' % (len(D), dominant))
+        n = d_tree.Node(dominant, len(D))
+        logger.debug('homogenous (%d) -> created node: %s' % (len(D), dominant))
         return n
     # no more attributes to split on, so pick dominant classification
     elif len(A) == 0:
-        n = d_tree.Node(dominant)
-        logger.info('no attributes -> created node: %s' % dominant)
+        n = d_tree.Node(dominant, len(D))
+        logger.debug('no attributes -> created node: %s' % dominant)
         return n
     else:
         splitIndex = selectSplittingAttribute(D, A, threshold)
         if splitIndex == None:
-            n = d_tree.Node(dominant)
-            logger.info('no split -> created node: %s' % dominant)
+            n = d_tree.Node(dominant, len(D))
+            logger.debug('no split -> created node: %s' % dominant)
             return n
         # split data by splitting attribute
         num = -1
@@ -36,6 +36,7 @@ def c45(D, A, T, threshold):
             splitData = splitContinous(D, A, splitIndex, num)
         else:
             splitData = split(D, A, splitIndex)
+
 
         A[splitIndex][1] = -1 # removes attribute from future consideration
         splitAttr = A[splitIndex][0]
@@ -52,11 +53,13 @@ def c45(D, A, T, threshold):
 # if no have a gain above threshold, return None
 def selectSplittingAttribute(D, A, threshold):
     p0 = entropy(D)
+    # logger.debug('entropy(D): %s' % p0)
     gain = [0 for a in A]
     for k, v in A:
         # check for columns to skip
         if v != -1:
             index = A.index([k, v])
+            logger.debug('k: %s' % k)
 
             if isContinuous(D, index):
                 x = findBestSplit(index, D)
@@ -67,7 +70,7 @@ def selectSplittingAttribute(D, A, threshold):
     max_gain = max(gain)
     best_index = gain.index(max_gain)
     
-    logger.debug('gain[]: %s' % gain)
+    # logger.debug('gain[]: %s' % gain)
     logger.debug('max_gain: %s' % max_gain)
     
     # only split if over the threshold
@@ -121,13 +124,13 @@ def splitContinous(D, A, splitIndex, threshold):
     splitData = {}
     # populate dict with (attribute, subset) pairs
     for d in D:
-      attribute = d[splitIndex]
-      if attribute < threshold:
-          splitData['Less'] = splitData.get('Less', [])
-          splitData['Less'].append(d)
-      else:
-          splitData['Greater'] = splitData.get('Greater', [])
-          splitData['Greater'].append(d)
+        attribute = d[splitIndex]
+        if float(attribute) <= float(threshold):
+            splitData['Less'] = splitData.get('Less', [])
+            splitData['Less'].append(d)
+        else:
+            splitData['Greater'] = splitData.get('Greater', [])
+            splitData['Greater'].append(d)
 
     # OrderedDict makes algorithm deterministic
     return OrderedDict(sorted(splitData.items()))
@@ -233,7 +236,8 @@ def log2(k):
 
 # returns the classification of dataset, Obama or McCain
 def getClass(D):
-    return D[-1]
+    # return D[-1]
+    return D[5]
 
 def isContinuous(D, index):
     continuous = False

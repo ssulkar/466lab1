@@ -1,23 +1,43 @@
 import math
 
+import logging
+logger = logging.getLogger(__name__)
+
 def selectSplittingAttribute(D, A, C, threshold):
+    logging.debug('len(D): %s' % len(D))
+    logging.debug('A: %s' % A)
+    logging.debug('C: %s' % C)
+
     p = {}
     gain = {}
 
     p0 = entropy(D, C)
     for a in A:
+        logger.debug('a: %s' % a)
         if a == C:
             continue
 
         if len(set([x[a] for x in D])) > 6:
             x = findBestSplit(a, D, C)
-            p[a] = entropyX(D, a, C, x)
-        else:
-            p[a] = entropyA(D, a, C)
-        gain[a] = p0 - p[a]
-    best = findMaxGain(gain)
+            logger.debug('x: %s' % x)
 
-    if gain[best] > threshold:
+            ent = entropyX(D, a, C, x)
+            logger.debug('ent: %s' % ent)
+
+            p[a] = ent
+        else:
+            ent = entropyA(D, a, C)
+            logger.debug('ent: %s' % ent)
+
+            p[a] = ent
+        gain_a = p0 - p[a]
+        logger.debug('gain_a: %s' % gain_a)
+        gain[a] = gain_a
+    best = findMaxGain(gain)
+    gain_best = gain[best]
+    logger.debug('gain_best: %s' % gain_best)
+
+    if gain_best > threshold:
         return best
     return None
 
@@ -40,7 +60,7 @@ def findBestSplit(a, D, C):
             if d[C] == c:
                 counts[c][d[a]] = counts[c][d[a]] + 1
                 
-    for x in counts[counts.keys()[0]]:
+    for x in counts[list(counts.keys())[0]]:
         gain[x] = p0 - entropyC(D, a, x, counts)
 
     return findMaxGain(gain)
